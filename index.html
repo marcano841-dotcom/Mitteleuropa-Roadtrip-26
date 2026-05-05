@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0081)file:///C:/Users/LuisJoseMarcanoMenen/Downloads/sommerreise_2026_komplett_32.html -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mitteleuropa Roadtrip 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080F0A;--bg2:#0D1610;--bg3:#121E14;--surface:#172019;
+  --border:rgba(74,200,120,0.1);--border2:rgba(74,200,120,0.22);
+  --text:#E8F2EA;--muted:#7A9E82;--faint:#2E4A34;
+  --g1:#4AC878;--g1-dim:rgba(74,200,120,0.12);
+  --g2:#2D8A50;--g3:#1A5C33;--g4:#0F3D22;
+  --gold:#C8A84A;--gold-dim:rgba(200,168,74,0.12);
+  --teal:#3ABFA0;--teal-dim:rgba(58,191,160,0.12);
+  --moss:#8AB87A;--moss-dim:rgba(138,184,122,0.12);
+  --coral:#D07860;--coral-dim:rgba(208,120,96,0.12);
+  --violet:#8878D8;--violet-dim:rgba(136,120,216,0.12);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Instrument Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;min-height:100vh;overflow-x:hidden;}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:80px 48px;position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 75% 15%,rgba(45,138,80,0.18) 0%,transparent 55%),radial-gradient(ellipse 50% 50% at 5% 75%,rgba(74,200,120,0.08) 0%,transparent 55%);}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(74,200,120,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(74,200,120,0.04) 1px,transparent 1px);background-size:80px 80px;}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(74,200,120,0.07) 1px,transparent 1px);background-size:32px 32px;background-position:16px 16px;}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1;width:100%;}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--g1);margin-bottom:28px;}
+.eyebrow-line{width:36px;height:1px;background:linear-gradient(90deg,var(--g1),transparent);}
+h1{font-family:'Syne',sans-serif;font-size:clamp(48px,7vw,90px);font-weight:800;line-height:0.92;letter-spacing:-0.03em;margin-bottom:32px;}
+h1 .dim{color:var(--faint);}
+h1 .accent{color:var(--g1);text-shadow:0 0 60px rgba(74,200,120,0.3);}
+h1 .white{color:var(--text);}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;margin-bottom:52px;}
+.meta-item{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}
+.meta-dot{width:5px;height:5px;border-radius:50%;background:var(--g1);box-shadow:0 0 8px rgba(74,200,120,0.5);}
+
+/* ── HERO NAV BUTTONS ── */
+.hero-stats-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+.hstat-pill{background:rgba(74,200,120,0.06);border:1px solid rgba(74,200,120,0.15);border-radius:10px;padding:10px 18px;display:flex;flex-direction:column;gap:2px;}
+.hstat-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--g1);line-height:1;letter-spacing:-0.02em;}
+.hstat-lbl{font-size:10px;color:var(--muted);font-weight:500;text-transform:uppercase;letter-spacing:0.06em;}
+.hero-tabs{display:flex;gap:10px;flex-wrap:wrap;}
+.hero-tab{display:flex;align-items:center;gap:10px;padding:11px 20px;border-radius:40px;cursor:pointer;text-decoration:none;font-size:13px;font-weight:500;font-family:'Instrument Sans',sans-serif;transition:all 0.25s;border:1px solid var(--border);color:var(--muted);background:var(--bg3);}
+.hero-tab:hover{border-color:var(--g1);background:var(--g1-dim);transform:translateY(-2px);box-shadow:0 8px 24px rgba(74,200,120,0.12);color:var(--text);}
+.hero-tab.active{border-color:var(--g1);background:var(--g1-dim);color:var(--g1);}
+.ht-label{font-size:10px;color:var(--muted);display:block;}
+.ht-name{display:block;font-weight:500;}
+
+/* ── STICKY NAV ── */
+.sticky-nav{position:sticky;top:0;z-index:200;background:rgba(8,15,10,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 48px;}
+.nav-inner::-webkit-scrollbar{display:none;}
+.nav-logo{font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:var(--g1);margin-right:16px;flex-shrink:0;letter-spacing:-0.01em;}
+.nav-btn{display:flex;align-items:center;gap:6px;padding:7px 16px;border-radius:24px;cursor:pointer;font-size:12px;font-weight:500;font-family:'Instrument Sans',sans-serif;border:1px solid transparent;color:var(--muted);transition:all 0.15s;white-space:nowrap;background:none;}
+.nav-btn:hover{color:var(--text);background:var(--bg3);border-color:var(--border);}
+.nav-btn.active{color:var(--g1);background:var(--g1-dim);border-color:rgba(74,200,120,0.3);}
+
+/* ── PAGES ── */
+.page{display:none;}.page.active{display:block;}
+.sections{max-width:1100px;margin:0 auto;padding:0 48px 100px;}
+
+/* ── PAGE HEADER ── */
+.page-hdr{padding:56px 0 36px;border-bottom:1px solid var(--border);margin-bottom:44px;}
+.page-hdr-label{font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.page-hdr-title{font-family:'Syne',sans-serif;font-size:clamp(30px,4vw,48px);font-weight:800;letter-spacing:-0.025em;line-height:1;color:var(--text);margin-bottom:8px;}
+.page-hdr-title .acc{color:var(--g1);}
+.page-hdr-sub{font-size:14px;color:var(--muted);}
+
+/* ── ROUTE BAR ── */
+.route-bar{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:28px 32px;margin-bottom:28px;position:relative;overflow:hidden;}
+.route-bar::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--g2),var(--g1),var(--g2),transparent);}
+.route-title{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:22px;}
+.route-steps{display:flex;align-items:center;flex-wrap:wrap;gap:0;}
+.rs{text-align:center;padding:0 4px;}
+.rs-flag{font-size:16px;margin-bottom:2px;}
+.rs-city{font-size:12px;font-weight:600;color:var(--text);}
+.rs-date{font-size:10px;color:var(--faint);}
+.rs-arr{display:flex;flex-direction:column;align-items:center;padding:0 10px;color:var(--g2);font-size:14px;}
+.rs-dist{font-size:9px;color:var(--faint);}
+
+/* ── STOP CARDS (Plan de Viaje) ── */
+.stop-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:12px;transition:all 0.2s;}
+.stop-card:hover{border-color:var(--border2);box-shadow:0 4px 24px rgba(0,0,0,0.25);transform:translateY(-1px);}
+.stop-card.open{transform:none;box-shadow:none;}
+.stop-card:hover{border-color:var(--border2);}
+.stop-head{display:flex;align-items:stretch;cursor:pointer;}
+.stop-accent{width:4px;flex-shrink:0;}
+.stop-badge{width:60px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 8px;border-right:1px solid var(--border);}
+.stop-num{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;line-height:1;}
+.stop-flag{font-size:15px;margin-top:3px;}
+.stop-main{flex:1;padding:16px 20px;}
+.stop-name{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;margin-bottom:3px;}
+.stop-sub{font-size:12px;color:var(--muted);}
+.stop-meta{display:flex;align-items:center;gap:8px;margin-top:6px;}
+.date-pill{font-size:11px;padding:3px 10px;border-radius:16px;font-weight:500;}
+.stop-right{padding:14px 18px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:4px;flex-shrink:0;}
+.nights-val{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;}
+.nights-lbl{font-size:10px;color:var(--muted);}
+.chevron{width:16px;height:16px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);transition:transform 0.25s;margin-top:4px;}
+.click-hint{font-size:10px;color:var(--faint);letter-spacing:0.06em;text-transform:uppercase;font-weight:500;margin-bottom:4px;transition:color 0.2s;}
+.stop-card:hover .click-hint,.day-card:hover .click-hint{color:var(--muted);}
+.stop-card.open .click-hint,.day-card.open .click-hint{display:none;}
+.stop-card.open .chevron{transform:rotate(-135deg);margin-top:-4px;}
+.stop-body{display:none;padding:22px;border-top:1px solid var(--border);}
+.stop-card.open .stop-body{display:block;}
+.stop-body{animation:fadeUp 0.3s ease both;}
+@keyframes bodyFade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.stop-card.open .stop-body{animation:bodyFade 0.25s ease both;}
+.day-card.open .day-body{animation:bodyFade 0.25s ease both;}
+
+/* ── CARDS GRID ── */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;margin-bottom:12px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px;transition:border-color 0.2s;}
+.card:hover{border-color:var(--border2);}
+.card-icon{font-size:18px;margin-bottom:8px;}
+.card-title{font-size:13px;font-weight:600;margin-bottom:4px;color:var(--text);}
+.card-desc{font-size:12px;color:var(--muted);line-height:1.55;}
+.card-tag{display:inline-block;margin-top:8px;font-size:10px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;padding:2px 8px;border-radius:10px;}
+
+/* ── WANDER CARDS ── */
+.wander-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-bottom:12px;}
+.wander-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;position:relative;transition:border-color 0.2s;}
+.wander-card:hover{border-color:var(--border2);}
+.wander-name{font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px;padding-right:52px;}
+.wander-stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:5px;}
+.wstat{font-size:11px;color:var(--muted);}
+.wander-desc{font-size:12px;color:var(--muted);line-height:1.5;}
+.diff{position:absolute;top:12px;right:12px;font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;}
+.easy{background:var(--g1-dim);color:var(--g1);}
+.mid{background:var(--gold-dim);color:var(--gold);}
+.hard{background:var(--coral-dim);color:var(--coral);}
+.rest{background:var(--teal-dim);color:var(--teal);}
+
+/* ── CAR NOTE ── */
+.car-note{background:var(--bg3);border-left:3px solid var(--gold);border-radius:0 10px 10px 0;padding:12px 16px;font-size:13px;color:var(--muted);line-height:1.6;margin-top:8px;}
+.car-note strong{color:var(--text);font-weight:500;}
+
+/* ── SUBHEAD ── */
+.sub-title{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--moss);margin:18px 0 10px;display:flex;align-items:center;gap:10px;}
+.sub-title::after{content:'';flex:1;height:1px;background:var(--border);}
+
+/* ── DIVIDER ── */
+.divider{border:none;border-top:1px solid var(--border);margin:52px 0 0;}
+
+/* ── REGION HEADER ── */
+.region-hdr{display:flex;align-items:flex-end;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border);}
+.region-num{font-family:'Syne',sans-serif;font-size:60px;font-weight:800;line-height:1;color:var(--faint);letter-spacing:-0.04em;flex-shrink:0;}
+.region-lbl{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px;}
+.region-name{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;letter-spacing:-0.02em;line-height:1;}
+.region-dates{font-size:13px;color:var(--muted);margin-top:4px;}
+
+/* ── DAY CARDS ── */
+.day-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:12px;transition:all 0.2s;}
+.day-card:hover{border-color:var(--border2);box-shadow:0 4px 24px rgba(0,0,0,0.25);transform:translateY(-1px);}
+.day-card.open{transform:none;box-shadow:none;}
+.day-card:hover{border-color:var(--border2);}
+.day-head{display:flex;align-items:stretch;cursor:pointer;}
+.day-date-col{width:66px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px 6px;border-right:1px solid var(--border);text-align:center;}
+.day-dow{font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);}
+.day-num{font-family:'Syne',sans-serif;font-size:28px;font-weight:800;color:var(--text);line-height:1;}
+.day-mon{font-size:10px;color:var(--muted);}
+.day-main-col{flex:1;padding:16px 20px;}
+.day-title{font-size:15px;font-weight:600;color:var(--text);margin-bottom:3px;}
+.day-sub{font-size:12px;color:var(--muted);}
+.day-right-col{padding:14px 18px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:6px;flex-shrink:0;}
+.diff-pill{font-size:10px;font-weight:600;padding:3px 10px;border-radius:16px;white-space:nowrap;}
+.day-body{display:none;padding:22px;border-top:1px solid var(--border);}
+.day-card.open .day-body{display:block;}
+.day-card.open .chevron{transform:rotate(-135deg);margin-top:-4px;}
+
+/* ── STATS BAR ── */
+.stats-bar{display:flex;gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px;}
+.sbar-item{flex:1;padding:12px;text-align:center;border-right:1px solid var(--border);}
+.sbar-item:last-child{border-right:none;}
+.sbar-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--g1);line-height:1;}
+.sbar-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em;margin-top:2px;}
+
+/* ── HIKE DESC ── */
+.hike-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:16px;}
+
+/* ── TIPS 2-COL ── */
+.tips-2col{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px;}
+.tip-sm{background:var(--surface);border-radius:8px;padding:10px 12px;}
+.tip-sm-lbl{font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--g1);margin-bottom:3px;}
+.tip-sm-txt{font-size:12px;color:var(--muted);line-height:1.5;}
+
+/* ── SCHEDULE ── */
+.sched{border:1px solid var(--border);border-radius:10px;overflow:hidden;}
+.sched-row{display:flex;align-items:flex-start;border-bottom:1px solid var(--border);}
+.sched-row:last-child{border-bottom:none;}
+.sched-time{width:52px;flex-shrink:0;padding:10px 6px;text-align:right;font-family:'Syne',sans-serif;font-size:11px;font-weight:700;color:var(--g1);border-right:2px solid var(--g1);background:var(--g1-dim);letter-spacing:-0.01em;}
+.sched-content{padding:10px 14px;flex:1;}
+.sched-ttl{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px;}
+.sched-det{font-size:11px;color:var(--muted);}
+
+/* ── NOTE BOXES ── */
+.note-box{background:var(--bg3);border-left:3px solid var(--g1);border-radius:0 8px 8px 0;padding:12px 14px;font-size:13px;color:var(--muted);line-height:1.6;margin-top:10px;}
+.note-box strong{color:var(--g1);font-weight:500;}
+.warn-box{background:var(--bg3);border-left:3px solid var(--coral);border-radius:0 8px 8px 0;padding:12px 14px;font-size:13px;color:var(--muted);line-height:1.6;margin-top:8px;}
+.warn-box strong{color:var(--coral);font-weight:500;}
+
+/* ── INFO GRID ── */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;}
+.info-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px;}
+.info-card h4{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.info-card p{font-size:13px;color:var(--muted);line-height:1.6;}
+.info-card strong{color:var(--text);font-weight:500;}
+
+/* ── BUDGET ── */
+.budget-totals{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:24px;}
+.bt-card{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:22px;}
+.bt-label{font-size:11px;color:var(--muted);margin-bottom:6px;}
+.bt-val{font-family:'Syne',sans-serif;font-size:38px;font-weight:800;color:var(--g1);line-height:1;margin-bottom:4px;}
+.bt-sub{font-size:12px;color:var(--muted);}
+.prog-section{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:12px;}
+.prog-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+.prog-row:last-child{margin-bottom:0;}
+.prog-label{font-size:12px;color:var(--muted);min-width:130px;}
+.prog-bg{flex:1;height:6px;background:var(--faint);border-radius:3px;overflow:hidden;}
+.prog-fill{height:100%;border-radius:3px;}
+.prog-val{font-size:12px;font-weight:500;color:var(--text);min-width:55px;text-align:right;}
+.acc-table{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px;}
+.acc-head{display:grid;grid-template-columns:1fr auto auto;padding:10px 16px;background:var(--surface);border-bottom:1px solid var(--border);}
+.acc-head span{font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
+.acc-row{display:grid;grid-template-columns:1fr auto auto;padding:12px 16px;border-bottom:1px solid var(--border);align-items:center;}
+.acc-row:last-child{border-bottom:none;}
+.acc-city{font-size:13px;font-weight:500;color:var(--text);}
+.acc-detail{font-size:11px;color:var(--muted);margin-top:2px;}
+.acc-nights{font-size:12px;color:var(--muted);text-align:center;padding:0 12px;}
+.acc-price{font-size:13px;font-weight:500;color:var(--text);text-align:right;}
+.acc-total{background:var(--g1-dim);display:grid;grid-template-columns:1fr auto auto;padding:12px 16px;}
+.acc-total span{font-size:13px;font-weight:600;color:var(--g1);}
+.act-table{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:12px;}
+.act-row{display:flex;padding:12px 16px;border-bottom:1px solid var(--border);gap:16px;}
+.act-row:last-child{border-bottom:none;}
+.act-info{flex:1;}
+.act-name{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px;}
+.act-note{font-size:11px;color:var(--muted);}
+.act-price{font-size:13px;font-weight:500;color:var(--text);flex-shrink:0;}
+.costs-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.cost-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px;}
+.cost-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:10px;}
+.cost-line{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);padding:4px 0;border-bottom:1px solid var(--border);}
+.cost-line:last-child{border-bottom:none;color:var(--text);font-weight:500;}
+.budget-tips{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.budget-tip{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--muted);line-height:1.6;border-left:3px solid;}
+.summary-table{background:var(--bg2);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-top:12px;}
+.sum-row{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--border);font-size:13px;}
+.sum-label{color:var(--muted);}
+.sum-val{color:var(--text);font-weight:500;}
+.sum-total{background:var(--g1-dim);display:flex;justify-content:space-between;align-items:center;padding:16px 18px;}
+.sum-total-label{font-size:14px;font-weight:600;color:var(--g1);}
+.sum-total-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--g1);}
+.sum-pp{background:var(--surface);display:flex;justify-content:space-between;align-items:center;padding:12px 18px;}
+.sum-pp-label{font-size:12px;color:var(--muted);}
+.sum-pp-val{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--text);}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);text-align:center;padding:40px 48px;font-size:12px;color:var(--faint);}
+footer strong{color:var(--muted);}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.hero-inner>*{animation:fadeUp 0.7s ease both;}
+.eyebrow{animation-delay:0.1s}h1{animation-delay:0.22s}.hero-meta{animation-delay:0.32s}.hero-stats-row{animation-delay:0.42s;opacity:0;transform:translateY(20px);transition:opacity 0.7s,transform 0.7s;}.hero-tabs{animation-delay:0.55s}
+.section-anim{opacity:0;transform:translateY(20px);transition:opacity 0.5s,transform 0.5s;}
+.section-anim.visible{opacity:1;transform:translateY(0);}
+@keyframes glow{0%,100%{text-shadow:0 0 40px rgba(74,200,120,0.25)}50%{text-shadow:0 0 80px rgba(74,200,120,0.45)}}
+h1 .accent{animation:glow 4s ease-in-out infinite;}
+
+@media(max-width:700px){
+  .hero{padding:52px 20px;}
+  .nav-inner{padding:10px 16px;}
+  .sections{padding:0 20px 80px;}
+  h1{font-size:44px;}
+  .tips-2col,.wander-grid,.cards-grid,.budget-totals,.costs-grid{grid-template-columns:1fr;}
+  .route-steps{flex-direction:column;align-items:flex-start;gap:4px;}
+  .rs-arr{transform:rotate(90deg);padding:4px 0;}
+  .hero-tabs{gap:6px;flex-wrap:wrap;}
+  .hero-tab{padding:9px 14px;font-size:12px;flex:1;min-width:calc(50% - 6px);justify-content:center;}
+  .ht-label{display:none;}
+  .acc-row,.acc-head,.acc-total{grid-template-columns:1fr auto auto!important;}
+  .acc-row>div:nth-child(3){display:none;}
+  .acc-head span:nth-child(3){display:none;}
+}
+
+/* ── COUNTER ANIMATION ── */
+.count-anim{display:inline-block;}
+
+/* ── PAGE TRANSITION ── */
+.page{display:none;opacity:0;}
+.page.active{display:block;animation:pageIn 0.3s ease forwards;}
+@keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── GLASSMORPHISM OPEN CARD ── */
+.stop-card.open{
+  border-color:rgba(74,200,120,0.3)!important;
+  box-shadow:0 0 0 1px rgba(74,200,120,0.1),0 8px 40px rgba(0,0,0,0.3),inset 0 1px 0 rgba(74,200,120,0.08);
+  background:linear-gradient(135deg,rgba(74,200,120,0.04) 0%,var(--bg2) 100%)!important;
+}
+.day-card.open{
+  border-color:rgba(74,200,120,0.3)!important;
+  box-shadow:0 0 0 1px rgba(74,200,120,0.1),0 8px 40px rgba(0,0,0,0.3),inset 0 1px 0 rgba(74,200,120,0.08);
+  background:linear-gradient(135deg,rgba(74,200,120,0.04) 0%,var(--bg2) 100%)!important;
+}
+
+/* ── STAR RATING ── */
+.stars{display:inline-flex;gap:2px;vertical-align:middle;}
+.star{width:12px;height:12px;}
+.star-full path{fill:#C8A84A;}
+.star-partial .star-fill{fill:#C8A84A;}
+.star-empty path{fill:var(--faint);}
+
+/* ── ROUTE TIMELINE ── */
+.route-timeline{
+  display:flex;align-items:center;
+  margin:20px 0 32px;
+  position:relative;
+}
+.rt-stop{
+  display:flex;flex-direction:column;align-items:center;
+  gap:6px;z-index:1;
+}
+.rt-dot{
+  width:10px;height:10px;border-radius:50%;
+  border:2px solid var(--g1);background:var(--bg);
+  transition:all 0.2s;
+}
+.rt-dot.active{background:var(--g1);box-shadow:0 0 10px rgba(74,200,120,0.5);}
+.rt-label{font-size:10px;font-weight:600;color:var(--muted);letter-spacing:0.04em;white-space:nowrap;}
+.rt-date{font-size:9px;color:var(--faint);}
+.rt-line{flex:1;height:1px;background:linear-gradient(90deg,var(--g1),var(--g2));margin:0 2px;margin-bottom:28px;}
+
+/* ── APP FEEL: bottom safe area ── */
+@supports(padding-bottom:env(safe-area-inset-bottom)){
+  footer{padding-bottom:calc(20px + env(safe-area-inset-bottom));}
+}
+
+/* ── SMOOTH OPEN BODY ── */
+.stop-body,.day-body{
+  animation:none;
+}
+.stop-card.open .stop-body,.day-card.open .day-body{
+  animation:bodySlide 0.3s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes bodySlide{
+  from{opacity:0;transform:translateY(-8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+
+/* ── BOOKING STATUS ── */
+.booking-status{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:600;padding:2px 9px;border-radius:5px;letter-spacing:0.03em;margin-left:6px;}
+.status-paid{background:var(--g1-dim);color:var(--g1);}
+.status-booked{background:var(--gold-dim);color:var(--gold);}
+.status-open{background:var(--coral-dim);color:var(--coral);}
+
+/* ── WEATHER PILLS ── */
+.weather-pill{display:inline-flex;align-items:center;gap:5px;font-size:10px;color:var(--muted);background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:3px 8px;margin-top:5px;}
+.weather-temp{font-weight:600;color:var(--text);}
+
+/* ── CHECKLIST ── */
+.checklist{display:flex;flex-direction:column;gap:6px;margin-top:4px;}
+.check-item{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all 0.15s;user-select:none;}
+.check-item:hover{border-color:var(--border2);}
+.check-item.done{background:var(--g1-dim);border-color:rgba(74,200,120,0.2);}
+.check-box{width:18px;height:18px;border-radius:5px;border:1.5px solid var(--muted);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all 0.15s;}
+.check-item.done .check-box{background:var(--g1);border-color:var(--g1);}
+.check-tick{width:10px;height:10px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg) translate(-1px,-2px);display:none;}
+.check-item.done .check-tick{display:block;}
+.check-label{font-size:13px;color:var(--text);flex:1;}
+.check-item.done .check-label{color:var(--muted);text-decoration:line-through;}
+.check-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px;}
+.check-section-title{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--border);}
+
+/* ── EMERGENCY SECTION ── */
+.emergency-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;}
+.emerg-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;}
+.emerg-num{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--coral);letter-spacing:-0.01em;margin-bottom:2px;}
+.emerg-lbl{font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);}
+.emerg-detail{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.5;}
+
+/* ── QUOTE IN FOOTER ── */
+.footer-quote{font-style:italic;font-size:13px;color:var(--muted);text-align:center;padding:20px 48px 8px;border-top:1px solid var(--border);letter-spacing:0.02em;}
+.footer-stops{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 48px 20px;font-size:11px;color:var(--faint);}
+.footer-stop-dot{width:8px;height:8px;border-radius:50%;background:var(--g1);}
+.footer-stop-line{width:20px;height:1px;background:var(--border2);}
+
+
+/* ── SCROLL PROGRESS BAR ── */
+.scroll-progress{
+  position:fixed;top:0;left:0;z-index:9999;
+  height:3px;width:0%;
+  background:linear-gradient(90deg,var(--g3),var(--g1),#8AE8B0);
+  border-radius:0 2px 2px 0;
+  transition:width 0.1s linear;
+  box-shadow:0 0 8px rgba(74,200,120,0.5);
+}
+
+/* ── SMOOTH CARD ANIMATION ── */
+.stop-body,.day-body{
+  display:none;
+  overflow:hidden;
+  max-height:0;
+  transition:max-height 0.45s cubic-bezier(0.34,1.2,0.64,1),opacity 0.3s ease;
+  opacity:0;
+}
+.stop-card.open .stop-body,
+.day-card.open .day-body{
+  display:block;
+  max-height:3000px;
+  opacity:1;
+  animation:none;
+}
+
+/* ── MICRO INTERACTIONS ── */
+.stop-btn,.hero-tab{
+  position:relative;overflow:hidden;
+  transition:transform 0.12s ease, box-shadow 0.15s ease !important;
+}
+.stop-btn:active,.hero-tab:active{
+  transform:scale(0.96) !important;
+}
+.stop-btn.active,.hero-tab.active{
+  box-shadow:0 0 16px rgba(74,200,120,0.25);
+}
+/* Ripple */
+.ripple{
+  position:absolute;border-radius:50%;
+  background:rgba(74,200,120,0.25);
+  transform:scale(0);
+  animation:rippleAnim 0.5s linear;
+  pointer-events:none;
+}
+@keyframes rippleAnim{
+  to{transform:scale(4);opacity:0;}
+}
+/* Nav btn press */
+.nav-btn{transition:color 0.15s,transform 0.1s !important;}
+.nav-btn:active{transform:scale(0.94);}
+
+/* ── DARK/LIGHT TOGGLE ── */
+.theme-toggle{
+  margin-left:auto;flex-shrink:0;
+  width:36px;height:36px;border-radius:50%;
+  border:1px solid var(--border2);
+  background:var(--bg3);
+  cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;
+  transition:all 0.2s;
+  color:var(--text);
+}
+.theme-toggle:hover{background:var(--surface);border-color:var(--g1);}
+
+/* ── LIGHT MODE ── */
+body.light-mode{
+  --bg:#F4F1EC;
+  --bg2:#EDEAE3;
+  --bg3:#E4E0D7;
+  --surface:#F9F7F3;
+  --surface2:#EAE6DE;
+  --border:rgba(30,25,20,0.1);
+  --border2:rgba(30,25,20,0.18);
+  --text:#1A1714;
+  --muted:#6A6560;
+  --faint:#B0ABA3;
+}
+body.light-mode .hero{background:var(--bg2) !important;}
+body.light-mode h1 .white{color:var(--text) !important;}
+body.light-mode .sticky-nav{background:rgba(244,241,236,0.95) !important;}
+body.light-mode .nav-logo{color:var(--g1) !important;}
+body.light-mode .route-bar{background:var(--bg3) !important;}
+body.light-mode .rs-city{color:var(--text) !important;}
+body.light-mode .hero-bg{opacity:0.4;}
+
+/* ── ELEVATION PROFILES ── */
+.elev-profile{
+  margin:12px 0 8px;
+  background:var(--bg3);
+  border-radius:10px;
+  padding:12px 14px 8px;
+  border:1px solid var(--border);
+}
+.elev-label{font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.elev-svg{width:100%;height:80px;overflow:visible;}
+.elev-fill{fill:rgba(74,200,120,0.12);}
+.elev-line{fill:none;stroke:var(--g1);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.elev-dot{fill:var(--g1);}
+.elev-dot-start{fill:var(--teal);}
+.elev-dot-end{fill:var(--gold);}
+.elev-label-pt{font-size:9px;fill:var(--muted);font-family:'Syne',sans-serif;}
+.elev-label-pt.top{fill:var(--g1);font-weight:700;}
+.elev-stats{display:flex;gap:16px;margin-top:6px;}
+.elev-stat{font-size:10px;color:var(--muted);}
+.elev-stat strong{color:var(--text);font-weight:600;}
+
+</style>
+</head>
+<body>
+<div class="scroll-progress" id="scrollBar" style="width: 0%;"></div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<header class="hero">
+  <div class="hero-img"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">Sommerreise 2026 · Kompletter Guide</div>
+    <h1><span class="accent">Mitteleuropa</span><br><span class="white">Roadtrip</span></h1>
+    <div class="hero-meta">
+      <span><strong>19. Juli – 1. August</strong></span>
+      <span><strong>3 Länder · 5 Stops · 13 Nächte</strong></span>
+      <span><strong>Mit dem Auto · ~2.800 km</strong></span>
+    </div>
+    <div class="hero-tabs">
+      <a class="hero-tab" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/sommerreise_2026_komplett_32.html#" onclick="showPage(&#39;reiseplan&#39;);return false;">
+        <span class="ht-icon">🗺</span>
+        <span class="ht-info"><span class="ht-label">Alle Stops</span><span class="ht-name">Reiseplan</span></span>
+      </a>
+      <a class="hero-tab" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/sommerreise_2026_komplett_32.html#" onclick="showPage(&#39;wandertage&#39;);return false;">
+        <span class="ht-icon">🥾</span>
+        <span class="ht-info"><span class="ht-label">Tatra &amp; Zakopane</span><span class="ht-name">Wandertage</span></span>
+      </a>
+      <a class="hero-tab" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/sommerreise_2026_komplett_32.html#" onclick="showPage(&#39;stadttage&#39;);return false;">
+        <span class="ht-icon">🏛</span>
+        <span class="ht-info"><span class="ht-label">Bratislava · Krakau · Breslau</span><span class="ht-name">Stadttage</span></span>
+      </a>
+      <a class="hero-tab active" href="file:///C:/Users/LuisJoseMarcanoMenen/Downloads/sommerreise_2026_komplett_32.html#" onclick="showPage(&#39;budget&#39;);return false;">
+        <span class="ht-icon">💶</span>
+        <span class="ht-info"><span class="ht-label">Kosten &amp; Planung</span><span class="ht-name">Budget</span></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════ TOP NAV ═══════════ -->
+
+
+<!-- ═══════════════════════════════════════════
+     PAGE 1 — REISEPLAN
+═══════════════════════════════════════════ -->
+<div class="page" id="page-reiseplan">
+<div class="content">
+  <div class="page-hero">
+    <div class="page-hero-label">Überblick · 19. Juli – 1. August 2026</div>
+    <div class="page-hero-title">Die <em>Route</em></div>
+    <div class="page-hero-sub">5 Stops · 13 Nächte · DE → SK → PL → DE</div>
+  </div>
+
+  <!-- Route Bar -->
+  <div class="route-bar">
+    <div class="route-bar-title">Auf einen Blick</div>
+    <div class="route-steps">
+      <div class="rs"><div class="rs-flag">DE</div><div class="rs-city">Stuttgart</div><div class="rs-date">19. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">8–9 h</div></div>
+      <div class="rs"><div class="rs-flag">SK</div><div class="rs-city">Bratislava</div><div class="rs-date">19.–20. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">2,5 h</div></div>
+      <div class="rs"><div class="rs-flag">SK</div><div class="rs-city">Hohe Tatra</div><div class="rs-date">20.–24. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">1,5 h</div></div>
+      <div class="rs"><div class="rs-flag">PL</div><div class="rs-city">Zakopane</div><div class="rs-date">24.–28. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">2 h</div></div>
+      <div class="rs"><div class="rs-flag">PL</div><div class="rs-city">Krakau</div><div class="rs-date">28.–30. Juli</div></div>
+      <div class="rs-arr">→<div class="rs-dist">3,5 h</div></div>
+      <div class="rs"><div class="rs-flag">PL</div><div class="rs-city">Breslau</div><div class="rs-date">30. Juli – 1. Aug.</div></div>
+      <div class="rs-arr">→<div class="rs-dist">6,5 h</div></div>
+      <div class="rs"><div class="rs-flag">DE</div><div class="rs-city">Bergedorf</div><div class="rs-date">1. Aug. ✓</div></div>
+    </div>
+  </div>
+
+  <!-- STOP 1: Bratislava -->
+  <div class="stop-card" id="sc1">
+    <div class="stop-card-head" onclick="toggleCard(&#39;sc1&#39;)">
+      <div class="stop-accent" style="background:var(--teal)"></div>
+      <div class="stop-badge" style="color:var(--teal)"><div class="stop-num">1</div><div class="stop-flag">SK</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--teal)">Bratislava</div>
+        <div class="stop-sub">Slowakei · Hauptstadt an der Donau · Altstadt zu Fuß</div>
+        <div class="stop-dates"><span class="date-pill" style="background:var(--bg3);color:var(--teal)">19.–20. Juli</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt">2</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Highlights &amp; Things to do</div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Burg Bratislava</div><div class="tip-desc">Gärten kostenlos — bester Panoramablick über die Donau. Museum optional (14 €). Barockgarten Maria-Theresia-Zeit.</div><span class="tip-badge" style="background:var(--bg3);color:var(--teal)">Muss-See</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Altstadt (Staré Mesto)</div><div class="tip-desc">Hauptplatz, Michaelertor, Primatialpalast. Alles in 1–2 h zu Fuß. Bronzestatuen-Jagd: Čumil, Schönauer, Paparazzo.</div><span class="tip-badge" style="background:var(--bg3);color:var(--teal)">Muss-See</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">UFO-Aussichtsturm</div><div class="tip-desc">Auf 95 m Höhe — schönster Sonnenuntergang der Stadt. Abends unbedingt hin!</div><span class="tip-badge" style="background:var(--amber-l);color:var(--amber)">Abends</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Magio Plaz</div><div class="tip-desc">Strandbar auf der Donauseite — günstige Drinks, Hängematten. Geheimtipp zum Entspannen nach der langen Anfahrt.</div><span class="tip-badge" style="background:var(--g4);color:var(--g1)">Geheimtipp</span></div>
+      </div>
+      <div class="car-note"><strong>Auto:</strong> Tiefgaragen zentral (~25 €/24h). <strong>Maut-Vignette kaufen!</strong> Online: e-znamka.sk · ~12 € für 10 Tage. Auch an Tankstellen/Grenze erhältlich.</div>
+    </div>
+  </div>
+
+  <!-- STOP 2: Hohe Tatra -->
+  <div class="stop-card" id="sc2">
+    <div class="stop-card-head" onclick="toggleCard(&#39;sc2&#39;)">
+      <div class="stop-accent" style="background:var(--g1)"></div>
+      <div class="stop-badge" style="color:var(--g1)"><div class="stop-num">2</div><div class="stop-flag">SK</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--g1)">Hohe Tatra</div>
+        <div class="stop-sub">Slowakei · Kleinstes Hochgebirge der Welt · Basis: Štrbské Pleso</div><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:5px;"><span class="booking-status status-paid">✓ 593 € Bezahlt</span><span class="weather-pill">☀ <span class="weather-temp">14–22°C</span>&nbsp;· Kühl, Gewitter möglich</span></div>
+        <div class="stop-dates"><span class="date-pill" style="background:var(--bg3);color:var(--g1)">20.–24. Juli</span><span style="font-size:11px;color:var(--muted)">4 Nächte · 3 Wandertage</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt">4</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Wanderungen — Details im Wandertage-Tab</div>
+      <div class="wander-grid">
+        <div class="wander-card"><span class="diff easy">Leicht</span><div class="wander-name">Tag 1 — Štrbské Pleso Seerundweg</div><div class="wander-stats"><span class="wstat">📍 2,2 km</span><span class="wstat">⏱ 45 min</span></div><div class="wander-desc">Ankommen &amp; Staunen. Direkt ab Hotel, flach, Panoramablick.</div></div>
+        <div class="wander-card"><span class="diff mid">Mittel</span><div class="wander-name">Tag 2 — Zelené Pleso via Veľká Svišťovka</div><div class="wander-stats"><span class="wstat">📍 16 km</span><span class="wstat">⏱ 6–7 h</span><span class="wstat">↕ 700 Hm</span></div><div class="wander-desc">Seilbahn + Gipfel + Ketten + Traumsee. Krasseste Tour der Tatra!</div></div>
+        <div class="wander-card"><span class="diff mid">Mittel</span><div class="wander-name">Tag 3 — Popradské Pleso + Vodopád Skok</div><div class="wander-stats"><span class="wstat">📍 16 km</span><span class="wstat">⏱ 5–6 h</span><span class="wstat">↕ 500 Hm</span></div><div class="wander-desc">Rundtour direkt ab Hotel. 2 Bergseen + 30m Wasserfall.</div></div>
+      </div>
+      <div class="car-note"><strong>Auto:</strong> Sehr praktisch — flexible Wahl der Startpunkte. Seilbahn Tatranská Lomnica auf gopass.sk vorbuchen! Schmalspurbahn verbindet die Tatra-Orte untereinander.</div>
+    </div>
+  </div>
+
+  <!-- STOP 3: Zakopane -->
+  <div class="stop-card" id="sc3">
+    <div class="stop-card-head" onclick="toggleCard(&#39;sc3&#39;)">
+      <div class="stop-accent" style="background:#5A9B6A"></div>
+      <div class="stop-badge" style="color:#3A7A4A"><div class="stop-num">3</div><div class="stop-flag">PL</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:#3A7A4A">Zakopane</div>
+        <div class="stop-sub">Polen · Herzstück der Reise · Highlander-Kultur · Polnische Tatra</div><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:5px;"><span class="booking-status status-booked">⏳ 513 € Noch offen</span><span class="weather-pill">☀ <span class="weather-temp">14–22°C</span>&nbsp;· Bergwetter, früh starten</span></div>
+        <div class="stop-dates"><span class="date-pill" style="background:var(--bg3);color:var(--moss)">24.–28. Juli</span><span style="font-size:11px;color:var(--muted)">4 Nächte · 3 Wandertage</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt">4</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Wanderungen — Details im Wandertage-Tab</div>
+      <div class="wander-grid">
+        <div class="wander-card"><span class="diff mid">Mittel</span><div class="wander-name">Tag 1 — Kasprowy Wierch (1.987 m)</div><div class="wander-stats"><span class="wstat">🚡 Seilbahn</span><span class="wstat">⏱ 3–4 h</span></div><div class="wander-desc">Grenzgipfel PL/SK. Seilbahn auf pkl.pl vorbuchen!</div></div>
+        <div class="wander-card"><span class="diff mid">Mittel</span><div class="wander-name">Tag 2 — Morskie Oko + Czarny Staw</div><div class="wander-stats"><span class="wstat">📍 22 km</span><span class="wstat">⏱ 6–7 h</span></div><div class="wander-desc">4.8 ★ AllTrails. Polens schönste Seen. Start 06:00 Uhr!</div></div>
+        <div class="wander-card"><span class="diff mid">Mittel+</span><div class="wander-name">Tag 3 — Dolina Pięciu Stawów</div><div class="wander-stats"><span class="wstat">📍 20 km</span><span class="wstat">⏱ 8–9 h</span></div><div class="wander-desc">Tal der Fünf Seen — Geheimtipp der Einheimischen!</div></div>
+        <div class="wander-card"><span class="diff rest-diff">Entspannt</span><div class="wander-name">Tag 4 — Thermalbäder Bukowina</div><div class="wander-stats"><span class="wstat">30 min</span><span class="wstat">~25 € p.P.</span></div><div class="wander-desc">Mineralwasser + Bergblick. Oder optional Giewont besteigen.</div></div>
+      </div>
+      <div class="sub-title">Stadt &amp; Kultur</div>
+      <div class="tips-grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">
+        <div class="tip-card"><div class="tip-title">🧀 Oscypek</div><div class="tip-desc">Geräucherter Schafskäse direkt vom Markt — unbedingt probieren!</div></div>
+        <div class="tip-card"><div class="tip-title">⛰ Gubałówka</div><div class="tip-desc">Standseilbahn auf 1.123 m, Panoramablick über Zakopane &amp; Tatra.</div></div>
+        <div class="tip-card"><div class="tip-title">🪵 Highlander-Kultur</div><div class="tip-desc">Holzarchitektur, Trachten, Volksmusik abends in Tavernen.</div></div>
+      </div>
+      <div class="car-note"><strong>Auto:</strong> Morskie Oko → Parkplatz Palenica Białczańska. Kasprowy → Parkplatz Kuźnice. Polen: keine Pkw-Vignette. Bargeld in PLN (Złoty) mitnehmen!</div>
+    </div>
+  </div>
+
+  <!-- STOP 4: Krakau -->
+  <div class="stop-card" id="sc4">
+    <div class="stop-card-head" onclick="toggleCard(&#39;sc4&#39;)">
+      <div class="stop-accent" style="background:var(--violet)"></div>
+      <div class="stop-badge" style="color:var(--violet)"><div class="stop-num">4</div><div class="stop-flag">PL</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--violet)">Krakau</div>
+        <div class="stop-sub">Polen · UNESCO-Weltkulturerbe · Kulturhauptstadt</div><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:5px;"><span class="booking-status status-paid">✓ 172 € Bezahlt</span><span class="weather-pill">☀ <span class="weather-temp">20–28°C</span>&nbsp;· Warm, angenehm</span></div>
+        <div class="stop-dates"><span class="date-pill" style="background:var(--bg3);color:var(--violet)">28.–30. Juli</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt">2</div><div class="nights-lbl">Nächte</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="sub-title">Tag 1 — Altstadt &amp; Wawel</div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Rynek Główny</div><div class="tip-desc">200×200 m — einer der größten Marktplätze Europas. Marienkirche, Tuchhallen, Trompeter zur vollen Stunde.</div><span class="tip-badge" style="background:var(--bg3);color:var(--violet)">Muss-See</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Wawel-Burg</div><div class="tip-desc">Burggelände kostenlos. Prunksäle kostenpflichtig. Abends zum Sonnenuntergang — goldene Stunde!</div><span class="tip-badge" style="background:var(--bg3);color:var(--violet)">Highlight</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Drachenhöhle + Weichselufer</div><div class="tip-desc">Feuerspuckende Drachenstatue, Flussspaziergang unter dem Wawel. Kostenlos!</div><span class="tip-badge" style="background:var(--bg2);color:var(--ink3)">Kostenlos</span></div>
+      </div>
+      <div class="sub-title">Tag 2 — Kazimierz &amp; Ausflug</div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Kazimierz</div><div class="tip-desc">Ehem. jüdisches Viertel — heute hippste Gegend Krakaus. Cafés, Galerien, Bars. Abends sehr lebendig.</div><span class="tip-badge" style="background:var(--amber-l);color:var(--amber)">Abends</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Wieliczka Salzbergwerk</div><div class="tip-desc">UNESCO-Welterbe, 10 km entfernt. Unterirdische Kapellen aus Salz, 135 m tief. Vorbuchen!</div><span class="tip-badge" style="background:var(--bg3);color:var(--violet)">Tagesausflug</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Polnische Küche</div><div class="tip-desc">Pierogi, Żurek, Zapiekanka. Abendessen zu zweit ~25 € — sehr günstig!</div><span class="tip-badge" style="background:var(--amber-l);color:var(--amber)">Kulinarik</span></div>
+      </div>
+      <div class="car-note"><strong>Auto:</strong> Altstadt = Fußgängerzone. Hotel mit Tiefgarage buchen (~10 €/Tag). Wieliczka: 15 min Fahrt oder direkter Bus ab Rynek.</div>
+    </div>
+  </div>
+
+  <!-- STOP 5: Breslau -->
+  <div class="stop-card" id="sc5">
+    <div class="stop-card-head" onclick="toggleCard(&#39;sc5&#39;)">
+      <div class="stop-accent" style="background:var(--coral)"></div>
+      <div class="stop-badge" style="color:var(--coral)"><div class="stop-num">5</div><div class="stop-flag">PL</div></div>
+      <div class="stop-main">
+        <div class="stop-name" style="color:var(--coral)">Breslau (Wrocław)</div>
+        <div class="stop-sub">Polen · Zwischenstopp Heimreise · ~3,5 h von Krakau</div><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:5px;"><span class="booking-status status-paid">✓ 156 € Bezahlt</span><span class="weather-pill">☀ <span class="weather-temp">20–27°C</span>&nbsp;· Warm, sonnig</span></div>
+        <div class="stop-dates"><span class="date-pill" style="background:var(--bg3);color:var(--coral)">30. Juli – 1. Aug.</span></div>
+      </div>
+      <div class="stop-right"><div class="click-hint">Details ↓</div><div class="nights-txt">1</div><div class="nights-lbl">Nacht</div><div class="caret"></div></div>
+    </div>
+    <div class="stop-body">
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Rynek + Gotisches Rathaus</div><div class="tip-desc">Einer der schönsten Marktplätze Europas. Gotisches Rathaus mit astronomischer Uhr (15. Jh.).</div><span class="tip-badge" style="background:var(--bg3);color:var(--coral)">Muss-See</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">600+ Zwerge (Krasnale)</div><div class="tip-desc">Bronzezwerge überall in der Stadt versteckt — macht jeden Spaziergang zum Suchspiel!</div><span class="tip-badge" style="background:var(--g4);color:var(--g1)">Besonders</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Dominsel (Ostrów Tumski)</div><div class="tip-desc">Historische Insel in der Oder, gotischer Dom. Abends romantisch beleuchtet.</div><span class="tip-badge" style="background:var(--amber-l);color:var(--amber)">Abends</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Aula Leopoldina</div><div class="tip-desc">Barocker Prachtsaal 1728–1732. Einer der schönsten Universitätssäle Europas.</div><span class="tip-badge" style="background:var(--bg3);color:var(--coral)">Highlight</span></div>
+      </div>
+      <div class="car-note"><strong>Heimreise 01.08:</strong> Start 7–8 Uhr → ~6,5 h → Ankunft Bergedorf ~15 Uhr. 3+ Stunden Puffer bis 18 Uhr! Route: Breslau → Görlitz → Dresden → Berlin A10 → Hamburg.</div>
+    </div>
+  </div>
+
+  <div class="sub-title" style="margin-top:32px;">Praktische Infos</div>
+  <div class="info-grid">
+    <div class="info-card"><h4>Maut &amp; Vignetten</h4><p><strong>Slowakei:</strong> Vignette Pflicht! e-znamka.sk, ~12 € für 10 Tage.<br><br><strong>Polen:</strong> Keine Pkw-Vignette. Einige Autobahnen kostenpflichtig (App e-TOLL PL).</p></div>
+    <div class="info-card"><h4>Währungen</h4><p><strong>Slowakei:</strong> Euro €<br><br><strong>Polen:</strong> Złoty (PLN). 1 € ≈ 4,25 PLN. Bargeld immer mitnehmen — Märkte oft nur cash.</p></div>
+    <div class="info-card"><h4>Apps</h4><p><strong>Komoot / AllTrails:</strong> Wanderrouten offline.<br><br><strong>Bolt:</strong> Günstigstes Taxi in PL &amp; SK.<br><br><strong>Google Maps:</strong> Offline-Karten laden!</p></div>
+    <div class="info-card"><h4>Wir starten früh!</h4><p>Morskie Oko &amp; Kasprowy im Sommer überlaufen. Start 6–7 Uhr für freie Parkplätze.<br><br>Seilbahn Kasprowy auf pkl.pl vorbuchen!</p></div>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE 2 — WANDERTAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="page-wandertage">
+<div class="content">
+  <div class="page-hero">
+    <div class="page-hero-label">7 Tage · Hohe Tatra + Zakopane</div>
+    <div class="page-hero-title">Wander<em>tage</em></div>
+    <div class="page-hero-sub">Tagesplanung · Routen · Uhrzeiten · Tipps für jede Tour</div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+      <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);">
+        <span style="background:var(--g1-dim);color:var(--g1);font-size:10px;font-weight:700;padding:2px 9px;border-radius:5px;letter-spacing:0.04em;">Leicht</span>
+        unter 10 km
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);">
+        <span style="background:var(--gold-dim);color:var(--gold);font-size:10px;font-weight:700;padding:2px 9px;border-radius:5px;letter-spacing:0.04em;">Mittel</span>
+        10–20 km · bis 700 Hm
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);">
+        <span style="background:var(--coral-dim);color:var(--coral);font-size:10px;font-weight:700;padding:2px 9px;border-radius:5px;letter-spacing:0.04em;">Anspruchsvoll</span>
+        20+ km · 700+ Hm
+      </div>
+      <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);">
+        <span style="background:var(--teal-dim);color:var(--teal);font-size:10px;font-weight:700;padding:2px 9px;border-radius:5px;letter-spacing:0.04em;">Entspannt</span>
+        Ruhetag · Thermen
+      </div>
+    </div>
+  </div>
+
+  <!-- HOHE TATRA -->
+  <div class="region-hdr">
+    <div class="region-big-num">01</div>
+    <div class="region-info">
+      <div class="region-lbl">SK · Slowakei · Stop 2</div>
+      <div class="region-nm" style="color:var(--g1)">Hohe Tatra</div>
+      <div class="region-dt">20. – 24. Juli · 4 Nächte · Basis Štrbské Pleso</div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 1 -->
+  <div class="day-card open" id="wd1">
+    <div class="day-head" onclick="toggleDay(&#39;wd1&#39;)">
+      <div class="day-date-col"><div class="day-dow">Mo</div><div class="day-num">21</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Ankunft + Seerundweg Štrbské Pleso</div><div class="day-sub">Ankommen, erholen, ersten Eindruck genießen</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill easy">Leicht</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="stats-bar">
+        <div class="sbar-item"><div class="sbar-val">2,2</div><div class="sbar-lbl">km</div></div>
+        <div class="sbar-item"><div class="sbar-val">0</div><div class="sbar-lbl">Höhenmeter</div></div>
+        <div class="sbar-item"><div class="sbar-val">45</div><div class="sbar-lbl">Minuten</div></div>
+        <div class="sbar-item"><div class="sbar-val">1.351</div><div class="sbar-lbl">m Seehöhe</div></div>
+      </div>
+      <p class="hike-desc-txt">Nach ~2,5 h Fahrt von Bratislava kommen wir gegen Mittag an. Check-in, kurz erholen — dann ein entspannter Spaziergang um den traumhaften Gletschersee Štrbské Pleso. Flacher Rundweg ohne Steigungen, sofort ein beeindruckendes Panorama auf die Tatra-Gipfel. Perfekt zum Ankommen.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Startpunkt</div><div class="tip-sm-txt">Direkt ab Hotel — kein Auto nötig. Rundweg startet am Hotel Patria/Crocus.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Abend</div><div class="tip-sm-txt">Frühes Abendessen, früh schlafen — morgen wird die krasseste Tour der Tatra!</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">13:00</div><div class="sched-content"><div class="sched-ttl">Ankunft Štrbské Pleso · Check-in</div><div class="sched-det">~2,5 h Fahrt von Bratislava</div></div></div>
+        <div class="sched-row"><div class="sched-time">14:30</div><div class="sched-content"><div class="sched-ttl">Seerundweg Štrbské Pleso</div><div class="sched-det">2,2 km · 45 min · komplett flach</div></div></div>
+        <div class="sched-row"><div class="sched-time">17:00</div><div class="sched-content"><div class="sched-ttl">Ausruhen · Morgen planen</div><div class="sched-det">Karte studieren, Seilbahntickets checken</div></div></div>
+        <div class="sched-row"><div class="sched-time">19:30</div><div class="sched-content"><div class="sched-ttl">Abendessen am See</div><div class="sched-det">Restaurant Hotel oder Seeufer</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 2 -->
+  <div class="day-card open" id="wd2">
+    <div class="day-head" onclick="toggleDay(&#39;wd2&#39;)">
+      <div class="day-date-col"><div class="day-dow">Di</div><div class="day-num">22</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">🔥 Zelené Pleso — Grüner See via Veľká Svišťovka</div><div class="day-sub">Seilbahn + Gipfel + Ketten-Abstieg + Traumsee — die krasseste Tour</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill mid">Mittel–Anspruchsvoll</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="stats-bar">
+        <div class="sbar-item"><div class="sbar-val">16</div><div class="sbar-lbl">km</div></div>
+        <div class="sbar-item"><div class="sbar-val">~700</div><div class="sbar-lbl">Höhenmeter</div></div>
+        <div class="sbar-item"><div class="sbar-val">6–7</div><div class="sbar-lbl">Stunden</div></div>
+        <div class="sbar-item"><div class="sbar-val">2.034</div><div class="sbar-lbl">m Gipfel</div></div>
+      </div>
+      <p class="hike-desc-txt">Das absolute Highlight der Hohen Tatra. Seilbahn hoch zu Skalnaté Pleso (1.751 m), dann Aufstieg zum Gipfel Veľká Svišťovka (2.034 m) mit atemberaubendem 360°-Panorama. Danach steiler Abstieg mit gesicherten Kettenpassagen (macht Spaß!) zum leuchtend türkisen Grünen See — komplett von 2.500 m hohen Felswänden eingeschlossen. Mittagessen im Berggasthof direkt am Seeufer. Zurück durch Zwergnadelwald.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Seilbahn buchen!</div><div class="tip-sm-txt">gopass.sk — früh buchen. 20 min Fahrt nach Tatranská Lomnica.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Mittagessen am See</div><div class="tip-sm-txt">Chata pri Zelenom plese — warme Gerichte, Bier, Traumblick!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Wildblaubeeren</div><div class="tip-sm-txt">Im Juli reife Blaubeeren direkt am Weg pflücken!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Wetter</div><div class="tip-sm-txt">Bei Gewitter sofort abbrechen! Nasse Ketten sind rutschig.</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">06:30</div><div class="sched-content"><div class="sched-ttl">Frühstück &amp; Abfahrt nach Tatranská Lomnica</div><div class="sched-det">20 min Fahrt</div></div></div>
+        <div class="sched-row"><div class="sched-time">07:30</div><div class="sched-content"><div class="sched-ttl">Seilbahn → Skalnaté Pleso (1.751 m)</div><div class="sched-det">Gebuchte Tickets bringen wir mit!</div></div></div>
+        <div class="sched-row"><div class="sched-time">08:30</div><div class="sched-content"><div class="sched-ttl">Aufstieg Veľká Svišťovka (2.034 m)</div><div class="sched-det">~1,5 h · 360° Panorama auf alle Gipfel</div></div></div>
+        <div class="sched-row"><div class="sched-time">10:30</div><div class="sched-content"><div class="sched-ttl">Abstieg mit Ketten → Zelené Pleso</div><div class="sched-det">~1 h · Ketten gesichert · macht Spaß!</div></div></div>
+        <div class="sched-row"><div class="sched-time">12:30</div><div class="sched-content"><div class="sched-ttl">Mittagessen Berggasthof am Grünen See</div><div class="sched-det">Warme Gerichte direkt am türkisen See</div></div></div>
+        <div class="sched-row"><div class="sched-time">14:00</div><div class="sched-content"><div class="sched-ttl">Rückweg durch Zwergnadelwald</div><div class="sched-det">~2,5 h zurück nach Tatranská Lomnica</div></div></div>
+        <div class="sched-row"><div class="sched-time">17:00</div><div class="sched-content"><div class="sched-ttl">Zurück · Wellness im Hotel</div><div class="sched-det">Pool, Sauna — wir haben es verdient!</div></div></div>
+      </div>
+      <div class="note-box"><strong>Wow-Moment:</strong> Beim Abstieg vom Gipfel erscheint der türkise See plötzlich tief unter uns, komplett eingeschlossen von 2.500 m hohen Wänden. Eine der schönsten Kulissen in ganz Mitteleuropa.</div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 3 -->
+  <div class="day-card open" id="wd3">
+    <div class="day-head" onclick="toggleDay(&#39;wd3&#39;)">
+      <div class="day-date-col"><div class="day-dow">Mi</div><div class="day-num">23</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Popradské Pleso + Vodopád Skok</div><div class="day-sub">Bergsee + 30 m Wasserfall · Rundtour direkt ab Hotel</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill mid">Mittel</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="stats-bar">
+        <div class="sbar-item"><div class="sbar-val">16</div><div class="sbar-lbl">km Rundtour</div></div>
+        <div class="sbar-item"><div class="sbar-val">~500</div><div class="sbar-lbl">Höhenmeter</div></div>
+        <div class="sbar-item"><div class="sbar-val">5–6</div><div class="sbar-lbl">Stunden</div></div>
+        <div class="sbar-item"><div class="sbar-val" style="font-size:12px;padding-top:2px;"><span class="stars"><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><defs><lineargradient id="sg47"><stop offset="70%" stop-color="#C8A84A"></stop><stop offset="70%" stop-color="#2E4A34"></stop></lineargradient></defs><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="url(#sg47)"></path></svg></span></div><div class="sbar-lbl">AllTrails</div></div>
+      </div>
+      <p class="hike-desc-txt">Start direkt ab Štrbské Pleso — kein Auto nötig! Roter Weg durch duftenden Kiefernwald zum traumhaften Popradský See (1.494 m) mit dem kleinen Bergsteigerfriedhof im Zirbelwald. Weiter bergauf zum 30 m hohen Schleierwasserfall Vodopád Skok — im Juli mit Schmelzwasser am imposantesten. Kreisroute durch das Furkotská-Tal zurück.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Kein Auto nötig</div><div class="tip-sm-txt">Start direkt ab Hotel Štrbské Pleso — super entspannt!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Essen</div><div class="tip-sm-txt">Kein Gasthof auf dem Weg → Snacks und 1,5 L Wasser nehmen wir mit. Picknick am See!</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">07:00</div><div class="sched-content"><div class="sched-ttl">Frühstück · Snacks einpacken</div><div class="sched-det">Start direkt vom Hotel</div></div></div>
+        <div class="sched-row"><div class="sched-time">08:00</div><div class="sched-content"><div class="sched-ttl">Roter Weg aufwärts durch Kiefernwald</div></div></div>
+        <div class="sched-row"><div class="sched-time">09:30</div><div class="sched-content"><div class="sched-ttl">Popradský See (1.494 m)</div><div class="sched-det">Pause · Bergsteigerfriedhof · Picknick</div></div></div>
+        <div class="sched-row"><div class="sched-time">11:00</div><div class="sched-content"><div class="sched-ttl">Vodopád Skok — 30 m Wasserfall</div><div class="sched-det">Im Juli besonders imposant durch Schmelzwasser</div></div></div>
+        <div class="sched-row"><div class="sched-time">12:30</div><div class="sched-content"><div class="sched-ttl">Rückweg Furkotská-Tal (grüner Weg)</div><div class="sched-det">~2,5 h · schöne Lichtungen</div></div></div>
+        <div class="sched-row"><div class="sched-time">15:30</div><div class="sched-content"><div class="sched-ttl">Hotel · Pool + Sauna</div><div class="sched-det">Morgen früh Abfahrt nach Zakopane!</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZAKOPANE SECTION -->
+  <div class="region-hdr" style="margin-top:48px;">
+    <div class="region-big-num">02</div>
+    <div class="region-info">
+      <div class="region-lbl">PL · Polen · Stop 3</div>
+      <div class="region-nm" style="color:#3A7A4A">Zakopane</div>
+      <div class="region-dt">24. – 28. Juli · 4 Nächte · 3 Wandertage + 1 Ruhetag</div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 4 -->
+  <div class="day-card" id="wd4">
+    <div class="day-head" onclick="toggleDay(&#39;wd4&#39;)">
+      <div class="day-date-col"><div class="day-dow">Do</div><div class="day-num">24</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Kasprowy Wierch (1.987 m) — Grenzgipfel</div><div class="day-sub">Ein Fuß in Polen, einer in der Slowakei · Seilbahn oder Aufstieg</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill mid">Mittel</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="stats-bar">
+        <div class="sbar-item"><div class="sbar-val">~8</div><div class="sbar-lbl">km (Seilbahn)</div></div>
+        <div class="sbar-item"><div class="sbar-val">~400</div><div class="sbar-lbl">Höhenmeter</div></div>
+        <div class="sbar-item"><div class="sbar-val">3–4</div><div class="sbar-lbl">Stunden</div></div>
+        <div class="sbar-item"><div class="sbar-val">1.987</div><div class="sbar-lbl">m Gipfel</div></div>
+      </div>
+      <p class="hike-desc-txt">Anfahrt morgens von Štrbské Pleso (~1,5 h). Nach Check-in: Seilbahn von Kuźnice auf den Kasprowy Wierch — auf dem Gipfelplateau verläuft die polnisch-slowakische Grenze! Ein Fuß in Polen, einer in der Slowakei. 360°-Panorama auf beide Tatra-Seiten, im Juli oft noch Schneefelder.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Seilbahn VORBUCHEN!</div><div class="tip-sm-txt">pkl.pl — oft Wochen im Voraus ausgebucht. ~30 € p.P. Hin &amp; Zurück.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Nachmittag</div><div class="tip-sm-txt">Krupówki-Straße erkunden, Oscypek (Schafskäse) vom Markt probieren!</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">08:00</div><div class="sched-content"><div class="sched-ttl">Abfahrt Štrbské Pleso → Zakopane</div><div class="sched-det">~1,5 h Fahrt</div></div></div>
+        <div class="sched-row"><div class="sched-time">10:00</div><div class="sched-content"><div class="sched-ttl">Check-in · Gepäck abgeben</div></div></div>
+        <div class="sched-row"><div class="sched-time">11:00</div><div class="sched-content"><div class="sched-ttl">Seilbahn Kuźnice → Kasprowy Wierch</div><div class="sched-det">Gebuchte Tickets bringen wir mit!</div></div></div>
+        <div class="sched-row"><div class="sched-time">12:00</div><div class="sched-content"><div class="sched-ttl">Gipfel — Grenzfoto PL/SK!</div><div class="sched-det">1 Fuß Polen · 1 Fuß Slowakei</div></div></div>
+        <div class="sched-row"><div class="sched-time">14:00</div><div class="sched-content"><div class="sched-ttl">Seilbahn zurück oder Wanderung Hala Gąsienicowa</div><div class="sched-det">Schöne Almwanderung (2,5 h)</div></div></div>
+        <div class="sched-row"><div class="sched-time">17:00</div><div class="sched-content"><div class="sched-ttl">Krupówki · Oscypek probieren</div><div class="sched-det">Zakopane kennenlernen</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 5 -->
+  <div class="day-card open" id="wd5">
+    <div class="day-head" onclick="toggleDay(&#39;wd5&#39;)">
+      <div class="day-date-col"><div class="day-dow">Fr</div><div class="day-num">25</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">🔥 Morskie Oko + Czarny Staw pod Rysami</div><div class="day-sub">Polens schönste Seen · 4.8 ★ AllTrails · Start 06:00 Uhr!</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill mid">Mittel</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="stats-bar">
+        <div class="sbar-item"><div class="sbar-val">22</div><div class="sbar-lbl">km</div></div>
+        <div class="sbar-item"><div class="sbar-val">~500</div><div class="sbar-lbl">Höhenmeter</div></div>
+        <div class="sbar-item"><div class="sbar-val">6–7</div><div class="sbar-lbl">Stunden</div></div>
+        <div class="sbar-item"><div class="sbar-val" style="font-size:12px;padding-top:2px;"><span class="stars"><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="#C8A84A"></path></svg><svg class="star" viewBox="0 0 16 16"><defs><lineargradient id="sg48"><stop offset="80%" stop-color="#C8A84A"></stop><stop offset="80%" stop-color="#2E4A34"></stop></lineargradient></defs><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.3l-3.7 2.1.7-4.1-3-2.9 4.2-.8z" fill="url(#sg48)"></path></svg></span></div><div class="sbar-lbl">AllTrails</div></div>
+      </div>
+      <p class="hike-desc-txt">Polens berühmtester Wanderweg. 8 km durch Wald zum leuchtend türkisen Morskie Oko (Meerauge, 1.395 m) — von schroffen Felswänden umgeben. Von dort 1 Stunde steil hoch zum dunkleren Czarny Staw (Schwarzer See, 1.580 m) — viel weniger Touristen, noch wilder. Von hier sieht man den Rysy-Gipfel direkt über sich. Pflichtprogramm!</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Start 06:00 Uhr!</div><div class="tip-sm-txt">Parkplatz füllt sich ab 8 Uhr. Früh da = See fast für uns allein.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Czarny Staw</div><div class="tip-sm-txt">Unbedingt 1 h weiterlaufen! Ruhiger, wilder, Rysy direkt über uns.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Eintritt</div><div class="tip-sm-txt">Nationalparkticket: 11 PLN. Parkplatz: ~35 PLN. Bargeld!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Essen</div><div class="tip-sm-txt">Schronisko PTTK direkt am See — Żurek, Pierogi, warme Suppe.</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">05:30</div><div class="sched-content"><div class="sched-ttl">Aufstehen · Snacks einpacken</div></div></div>
+        <div class="sched-row"><div class="sched-time">06:00</div><div class="sched-content"><div class="sched-ttl">Abfahrt → Parkplatz Palenica Białczańska</div><div class="sched-det">~20 min Fahrt</div></div></div>
+        <div class="sched-row"><div class="sched-time">06:15</div><div class="sched-content"><div class="sched-ttl">Start Wanderung (8 km flach)</div><div class="sched-det">Asphaltweg · unterwegs Wodogrzmoty Wasserfall</div></div></div>
+        <div class="sched-row"><div class="sched-time">08:30</div><div class="sched-content"><div class="sched-ttl">Morskie Oko!</div><div class="sched-det">Staunen, Fotos, Pause an der Berghütte</div></div></div>
+        <div class="sched-row"><div class="sched-time">10:00</div><div class="sched-content"><div class="sched-ttl">1 h steil hoch → Czarny Staw</div><div class="sched-det">Viel weniger Leute · Rysy direkt oben</div></div></div>
+        <div class="sched-row"><div class="sched-time">11:30</div><div class="sched-content"><div class="sched-ttl">Mittagessen Berghütte Morskie Oko</div><div class="sched-det">Żurek, Pierogi, Bigos</div></div></div>
+        <div class="sched-row"><div class="sched-time">13:00</div><div class="sched-content"><div class="sched-ttl">Rückweg (2 h)</div></div></div>
+        <div class="sched-row"><div class="sched-time">15:30</div><div class="sched-content"><div class="sched-ttl">Zurück Zakopane · Eis · Krupówki</div></div></div>
+      </div>
+      <div class="warn-box"><strong>Ab 2026:</strong> Pferdekutschen fahren nur noch auf 2,5 km. Für den Rest Elektrobusse oder zu Fuß. Empfehlung: komplett zu Fuß — wir seht mehr!</div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 6 -->
+  <div class="day-card" id="wd6">
+    <div class="day-head" onclick="toggleDay(&#39;wd6&#39;)">
+      <div class="day-date-col"><div class="day-dow">Sa</div><div class="day-num">26</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Dolina Pięciu Stawów — Tal der Fünf Seen</div><div class="day-sub">Geheimtipp der Einheimischen · 5 smaragdgrüne Bergseen</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill mid">Mittel+</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="stats-bar">
+        <div class="sbar-item"><div class="sbar-val">~20</div><div class="sbar-lbl">km</div></div>
+        <div class="sbar-item"><div class="sbar-val">~900</div><div class="sbar-lbl">Höhenmeter</div></div>
+        <div class="sbar-item"><div class="sbar-val">8–9</div><div class="sbar-lbl">Stunden</div></div>
+        <div class="sbar-item"><div class="sbar-val">1.672</div><div class="sbar-lbl">m Höhe</div></div>
+      </div>
+      <p class="hike-desc-txt">Laut Einheimischen noch schöner als Morskie Oko — aber viel weniger bekannt. Fünf smaragdgrüne Bergseen auf 1.672 m Höhe, eingebettet zwischen den höchsten Tatra-Gipfeln. Berghütte mit Panoramaterasse direkt am See. Wer fit ist, kann als Rundtour über Szpiglasowy Pass mit Morskie Oko kombinieren (26 km, 10 h, Ketten) — eine der epischsten Tagestouren Polens.</p>
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Samstag!</div><div class="tip-sm-txt">Noch früher starten als sonst — Samstag ist besonders voll am Parkplatz.</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Berghütte</div><div class="tip-sm-txt">Schronisko PTTK w Dolinie Pięciu Stawów — Terrasse mit Panoramablick auf alle 5 Seen!</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">05:30</div><div class="sched-content"><div class="sched-ttl">Abfahrt → Parkplatz Palenica</div><div class="sched-det">Samstag = früh ist alles!</div></div></div>
+        <div class="sched-row"><div class="sched-time">06:00</div><div class="sched-content"><div class="sched-ttl">Start Blauer Weg ins Fünf-Seen-Tal</div></div></div>
+        <div class="sched-row"><div class="sched-time">09:30</div><div class="sched-content"><div class="sched-ttl">Dolina Pięciu Stawów (1.672 m)</div><div class="sched-det">Alle 5 Seen erkunden · Staunen!</div></div></div>
+        <div class="sched-row"><div class="sched-time">12:00</div><div class="sched-content"><div class="sched-ttl">Mittagessen Berghütte am See</div><div class="sched-det">Terrasse mit Panoramablick</div></div></div>
+        <div class="sched-row"><div class="sched-time">13:30</div><div class="sched-content"><div class="sched-ttl">Rückweg</div><div class="sched-det">Gleicher Weg oder via Morskie Oko (länger)</div></div></div>
+        <div class="sched-row"><div class="sched-time">16:30</div><div class="sched-content"><div class="sched-ttl">Zakopane · letzter Abend feiern!</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WANDERTAG 7 — Ruhetag -->
+  <div class="day-card" id="wd7">
+    <div class="day-head" onclick="toggleDay(&#39;wd7&#39;)">
+      <div class="day-date-col"><div class="day-dow">So</div><div class="day-num">27</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Ruhetag — Thermalbäder oder Giewont (Option)</div><div class="day-sub">Entspannen · oder Zakopanes Wahrzeichen besteigen</div></div>
+      <div class="day-right-col"><div class="click-hint">Details ↓</div><span class="diff-pill rest-diff">Entspannt</span><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      
+      <div class="tips-2col">
+        <div class="tip-sm"><div class="tip-sm-lbl">Option A — Thermalbäder</div><div class="tip-sm-txt">Termy Bukowina (~30 min Fahrt, ~25 € p.P.) — Mineralwasser + Bergblick. Absolut entspannt!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Option B — Giewont (1.894 m)</div><div class="tip-sm-txt">12 km, ~5 h, Kettenpassagen kurz vor Gipfel (gesichert, macht Spaß). Bester Blick direkt auf Zakopane. Nur bei gutem Wetter!</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Abfahrt morgen</div><div class="tip-sm-txt">Heute Abend packen! Morgen früh nach Krakau (~2 h).</div></div>
+        <div class="tip-sm"><div class="tip-sm-lbl">Oscypek kaufen</div><div class="tip-sm-txt">Letzter Tag in Zakopane — Schafskäse als Souvenir mitnehmen!</div></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">08:00</div><div class="sched-content"><div class="sched-ttl">Ausschlafen ♥</div><div class="sched-det">Wir haben 3 harte Wandertage hinter uns!</div></div></div>
+        <div class="sched-row"><div class="sched-time">10:00</div><div class="sched-content"><div class="sched-ttl">Option A: Thermalbäder Bukowina</div><div class="sched-det">oder Option B: Giewont (ab Kuźnice)</div></div></div>
+        <div class="sched-row"><div class="sched-time">16:00</div><div class="sched-content"><div class="sched-ttl">Krupówki · Oscypek · Souvenirs</div></div></div>
+        <div class="sched-row"><div class="sched-time">20:00</div><div class="sched-content"><div class="sched-ttl">Abendessen + Koffer packen</div><div class="sched-det">Morgen nach Krakau!</div></div></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE 3 — STADTTAGE
+═══════════════════════════════════════════ -->
+<div class="page" id="page-stadttage">
+<div class="content">
+  <div class="page-hero">
+    <div class="page-hero-label">Bratislava · Krakau · Breslau</div>
+    <div class="page-hero-title">Stadt<em>tage</em></div>
+    <div class="page-hero-sub">Tagesplan · Highlights · Tipps für jede Stadt</div>
+  </div>
+
+  <!-- BRATISLAVA -->
+  <div class="region-hdr">
+    <div class="region-big-num" style="color:var(--teal-l)">BA</div>
+    <div class="region-info">
+      <div class="region-lbl">🇸🇰 Stop 1 · 2 Nächte</div>
+      <div class="region-nm" style="color:var(--teal)">Bratislava</div>
+      <div class="region-dt">19. – 20. Juli · Ankommen &amp; Entschleunigen</div>
+    </div>
+  </div>
+  <div class="day-card open" id="sd1">
+    <div class="day-head" onclick="toggleDay(&#39;sd1&#39;)">
+      <div class="day-date-col" style="background:var(--teal-l)"><div class="day-dow" style="color:var(--teal)">Mo</div><div class="day-num" style="color:var(--teal)">19</div><div class="day-mon" style="color:var(--teal)">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Ankunft &amp; Erster Nachmittag</div><div class="day-sub">Nach 8–9 h Fahrt: Mittagessen, Seebrücke, erste Schritte in der Altstadt</div></div>
+      <div class="day-right-col"><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">~18:00</div><div class="sched-content"><div class="sched-ttl">Ankunft Bratislava · Check-in</div><div class="sched-det">8–9 h Fahrt von Stuttgart</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">19:00</div><div class="sched-content"><div class="sched-ttl">Abendessen Altstadt</div><div class="sched-det">Erstes lokales Essen — Bratislavský rezeň (Wiener Schnitzel Slowakische Art)</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">21:00</div><div class="sched-content"><div class="sched-ttl">Kurzer Abendspaziergang Altstadt</div><div class="sched-det">Hauptplatz beleuchtet · UFO-Turm von unten bestaunen</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="day-card" id="sd2">
+    <div class="day-head" onclick="toggleDay(&#39;sd2&#39;)">
+      <div class="day-date-col" style="background:var(--teal-l)"><div class="day-dow" style="color:var(--teal)">Di</div><div class="day-num" style="color:var(--teal)">20</div><div class="day-mon" style="color:var(--teal)">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Voller Stadtag Bratislava</div><div class="day-sub">Burg · Altstadt · UFO · Magio Plaz</div></div>
+      <div class="day-right-col"><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Burg Bratislava</div><div class="tip-desc">Gärten kostenlos — bester Panoramablick. Barockgarten Maria-Theresia-Zeit.</div><span class="tip-badge" style="background:var(--bg3);color:var(--teal)">Muss-See · 10–12 Uhr</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Altstadt Rundgang</div><div class="tip-desc">Hauptplatz, Michaelertor, Primatialpalast, Bronzestatuen-Jagd. Čumil, Schönauer, Paparazzo suchen!</div><span class="tip-badge" style="background:var(--bg3);color:var(--teal)">2–3 h · Mittag</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">UFO-Aussichtsturm</div><div class="tip-desc">95 m Höhe — schönster Sonnenuntergang der Stadt. Eintritt lohnt sich!</div><span class="tip-badge" style="background:var(--amber-l);color:var(--amber)">Abends 19–20 Uhr</span></div>
+        <div class="tip-card"><div class="tip-icon"></div><div class="tip-title">Magio Plaz — Geheimtipp</div><div class="tip-desc">Strandbar Donauseite — günstige Drinks, Hängematten. Entspannen nach Stadtbummel!</div><span class="tip-badge" style="background:var(--g4);color:var(--g1)">15–18 Uhr</span></div>
+      </div>
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">09:00</div><div class="sched-content"><div class="sched-ttl">Frühstück im Hotel</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">10:00</div><div class="sched-content"><div class="sched-ttl">Burg Bratislava</div><div class="sched-det">Gärten + Burggelände · ~1,5 h</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">12:00</div><div class="sched-content"><div class="sched-ttl">Mittagessen Altstadt</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">13:30</div><div class="sched-content"><div class="sched-ttl">Altstadt Rundgang · Bronzestatuen</div><div class="sched-det">Michaelertor, Hauptplatz, Primatialpalast · ~2 h</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">15:30</div><div class="sched-content"><div class="sched-ttl">Magio Plaz — Strandbar</div><div class="sched-det">Chillen an der Donau mit Burgblick</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">19:00</div><div class="sched-content"><div class="sched-ttl">UFO-Aussichtsturm zum Sonnenuntergang</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--teal)">21:00</div><div class="sched-content"><div class="sched-ttl">Abendessen Donaupromenade</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KRAKAU -->
+  <div class="region-hdr" style="margin-top:48px;">
+    <div class="region-big-num" style="color:var(--violet-l)">KR</div>
+    <div class="region-info">
+      <div class="region-lbl">🇵🇱 Stop 4 · 2 Nächte</div>
+      <div class="region-nm" style="color:var(--violet)">Krakau</div>
+      <div class="region-dt">28. – 30. Juli · UNESCO-Weltkulturerbe</div>
+    </div>
+  </div>
+  <div class="day-card" id="sd3">
+    <div class="day-head" onclick="toggleDay(&#39;sd3&#39;)">
+      <div class="day-date-col" style="background:var(--violet-l)"><div class="day-dow" style="color:var(--violet)">Di</div><div class="day-num" style="color:var(--violet)">28</div><div class="day-mon" style="color:var(--violet)">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Tag 1 — Altstadt &amp; Wawel</div><div class="day-sub">Rynek Główny · Wawel-Burg · Drachenhöhle · Weichselufer</div></div>
+      <div class="day-right-col"><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">09:00</div><div class="sched-content"><div class="sched-ttl">Ankunft Krakau · Check-in (~2 h von Zakopane)</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">10:30</div><div class="sched-content"><div class="sched-ttl">Rynek Główny — Hauptmarkt (200×200 m)</div><div class="sched-det">Marienkirche, Tuchhallen · Trompeter zur vollen Stunde!</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">12:30</div><div class="sched-content"><div class="sched-ttl">Mittagessen Altstadt</div><div class="sched-det">Pierogi, Żurek, Zapiekanka</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">14:00</div><div class="sched-content"><div class="sched-ttl">Wawel-Burg + Kathedrale</div><div class="sched-det">Burggelände kostenlos · Innenbesichtigung optional</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">16:30</div><div class="sched-content"><div class="sched-ttl">Drachenhöhle + Weichselufer</div><div class="sched-det">Feuerspuckende Drachenstatue · Flussspaziergang · kostenlos</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">19:00</div><div class="sched-content"><div class="sched-ttl">Wawel zum Sonnenuntergang</div><div class="sched-det">Abends golden beleuchtet — der beste Moment!</div></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="day-card" id="sd4">
+    <div class="day-head" onclick="toggleDay(&#39;sd4&#39;)">
+      <div class="day-date-col" style="background:var(--violet-l)"><div class="day-dow" style="color:var(--violet)">Mi</div><div class="day-num" style="color:var(--violet)">29</div><div class="day-mon" style="color:var(--violet)">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Tag 2 — Kazimierz + Wieliczka</div><div class="day-sub">Hippster Viertel · UNESCO-Salzbergwerk</div></div>
+      <div class="day-right-col"><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">09:00</div><div class="sched-content"><div class="sched-ttl">Fahrt nach Wieliczka (15 min)</div><div class="sched-det">Tickets vorher online gebucht!</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">10:00</div><div class="sched-content"><div class="sched-ttl">Salzbergwerk Wieliczka</div><div class="sched-det">UNESCO · Kapellen aus Salz · 135 m tief · ~2,5 h Tour</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">13:00</div><div class="sched-content"><div class="sched-ttl">Mittagessen Kazimierz</div><div class="sched-det">Café Mleczarnia, Poranki oder Muhabbet</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">15:00</div><div class="sched-content"><div class="sched-ttl">Kazimierz erkunden</div><div class="sched-det">Galerien, Synagogen, Street Art, Buchhandlungen · ~2 h</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--violet)">19:00</div><div class="sched-content"><div class="sched-ttl">Abendessen Kazimierz · Abschiedsabend</div><div class="sched-det">Lebendigstes Viertel Krakaus abends!</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRESLAU -->
+  <div class="region-hdr" style="margin-top:48px;">
+    <div class="region-big-num" style="color:var(--coral-l)">WR</div>
+    <div class="region-info">
+      <div class="region-lbl">🇵🇱 Stop 5 · 1 Nacht · Zwischenstopp</div>
+      <div class="region-nm" style="color:var(--coral)">Breslau (Wrocław)</div>
+      <div class="region-dt">30. Juli – 1. Aug. · Letzte Nacht vor der Heimreise</div>
+    </div>
+  </div>
+  <div class="day-card" id="sd5">
+    <div class="day-head" onclick="toggleDay(&#39;sd5&#39;)">
+      <div class="day-date-col" style="background:var(--coral-l)"><div class="day-dow" style="color:var(--coral)">Do</div><div class="day-num" style="color:var(--coral)">30</div><div class="day-mon" style="color:var(--coral)">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Nachmittag &amp; Abend in Breslau</div><div class="day-sub">~3,5 h Fahrt von Krakau · Rynek · Zwerge · Dominsel · Aula</div></div>
+      <div class="day-right-col"><div class="caret"></div></div>
+    </div>
+    <div class="day-body">
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">09:00</div><div class="sched-content"><div class="sched-ttl">Abfahrt Krakau → Breslau (~3,5 h)</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">13:00</div><div class="sched-content"><div class="sched-ttl">Ankunft · Check-in Breslau</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">14:00</div><div class="sched-content"><div class="sched-ttl">Rynek + Gotisches Rathaus</div><div class="sched-det">205×175 m · astronomische Uhr 15. Jh.</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">15:30</div><div class="sched-content"><div class="sched-ttl">Zwergenjagd durch die Altstadt (Krasnale)</div><div class="sched-det">600+ Bronzezwerge suchen — macht Spaß!</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">17:00</div><div class="sched-content"><div class="sched-ttl">Aula Leopoldina · Universität</div><div class="sched-det">Barocker Prachtsaal 1728 — einer der schönsten Europas</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">19:00</div><div class="sched-content"><div class="sched-ttl">Dominsel (Ostrów Tumski)</div><div class="sched-det">Gotischer Dom · Oder-Spaziergang · abends romantisch beleuchtet</div></div></div>
+        <div class="sched-row"><div class="sched-time" style="background:var(--bg3);color:var(--coral)">21:00</div><div class="sched-content"><div class="sched-ttl">Letztes Abendessen · Koffer packen</div><div class="sched-det">Morgen früh Heimreise nach Bergedorf!</div></div></div>
+      </div>
+      <div class="note-box"><strong>Heimreise 01.08:</strong> Start 7–8 Uhr → ~6,5 h Fahrt → Bergedorf ~14–15 Uhr. Über 3 Stunden Puffer bis 18 Uhr. Route: Breslau → Görlitz → Dresden → Berlin A10 → Hamburg → Bergedorf.</div>
+    </div>
+  </div>
+
+
+  <div class="day-card section-anim" id="sd6">
+    <div class="day-head" onclick="toggleDay(&#39;sd6&#39;)">
+      <div class="day-date-col"><div class="day-dow">Fr</div><div class="day-num">31</div><div class="day-mon">Juli</div></div>
+      <div class="day-main-col"><div class="day-title">Tag 2 — Breslau · Entspannter Morgen</div><div class="day-sub">Frühstück · letzter Spaziergang · Heimreise nach Bergedorf</div></div>
+      <div class="day-right-col"><div class="chevron"></div></div>
+    </div>
+    <div class="day-body">
+      <div class="sched">
+        <div class="sched-row"><div class="sched-time">08:00</div><div class="sched-content"><div class="sched-ttl">Frühstück im Hotel</div></div></div>
+        <div class="sched-row"><div class="sched-time">09:30</div><div class="sched-content"><div class="sched-ttl">Morgenspaziergang Rynek</div><div class="sched-det">Nochmal Marktplatz ohne Touristenmassen · letzte Zwerge suchen</div></div></div>
+        <div class="sched-row"><div class="sched-time">11:00</div><div class="sched-content"><div class="sched-ttl">Check-out · Abfahrt nach Bergedorf</div><div class="sched-det">~6,5 h Fahrt → Ankunft ~17:30 Uhr ✓</div></div></div>
+        <div class="sched-row"><div class="sched-time">~17:30</div><div class="sched-content"><div class="sched-ttl">Ankunft Bergedorf — Zuhause!</div><div class="sched-det">Über 30 min Puffer bis 18 Uhr ✓</div></div></div>
+      </div>
+      <div class="note-box"><strong>Heimroute:</strong> Breslau → Görlitz → Dresden → Berlin A10 → Hamburg → Bergedorf. Start 11 Uhr → ~17:30 Uhr Ankunft. Perfekter Puffer!</div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE 4 — BUDGET
+═══════════════════════════════════════════ -->
+<div class="page active" id="page-budget">
+<div class="content">
+  <div class="page-hero">
+    <div class="page-hero-label">Kosten · Planung · Spartipps</div>
+    <div class="page-hero-title">Budget<em>planung</em></div>
+    <div class="page-hero-sub">Mittelklasse-Unterkunft · Gemischt essen · Ein paar Eintritte · Zu zweit</div>
+  </div>
+
+  <!-- Totals -->
+  <div class="budget-total">
+    <div class="budget-total-card">
+      <div class="bt-label">Gesamt zu zweit</div>
+      <div class="bt-val">~ 3.675 €</div>
+      <div class="bt-sub">13 Nächte · 5 Stops · 3 Länder</div>
+      <div style="margin-top:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-bottom:6px;">
+          <span style="color:var(--g1);font-weight:600;">992 € bezahlt</span>
+          <span>513 € offen</span>
+        </div>
+        <div style="height:4px;background:var(--faint);border-radius:2px;overflow:hidden;">
+          <div style="width:66%;height:100%;background:var(--g1);border-radius:2px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="budget-total-card">
+      <div class="bt-label">Pro Person</div>
+      <div class="bt-val" style="color:var(--teal)">~ 1.838 €</div>
+      <div class="bt-sub">Mittelklasse Hotel/Airbnb</div>
+    </div>
+  </div>
+
+  <!-- Progress Bars -->
+  <div class="prog-section">
+    <div class="sub-title" style="margin-top:0">Kostenverteilung</div>
+    <div class="prog-row">
+      <span class="prog-label">Unterkunft (13N)</span>
+      <div class="prog-bg"><div class="prog-fill" style="width:52%;background:var(--g1)"></div></div>
+      <span class="prog-val">1.505 €</span>
+    </div>
+    <div class="prog-row">
+      <span class="prog-label">Essen &amp; Trinken</span>
+      <div class="prog-bg"><div class="prog-fill" style="width:19%;background:var(--g2)"></div></div>
+      <span class="prog-val">480 €</span>
+    </div>
+    <div class="prog-row">
+      <span class="prog-label">Auto &amp; Fahrt</span>
+      <div class="prog-bg"><div class="prog-fill" style="width:16%;background:var(--amber)"></div></div>
+      <span class="prog-val">400 €</span>
+    </div>
+    <div class="prog-row">
+      <span class="prog-label">Aktivitäten</span>
+      <div class="prog-bg"><div class="prog-fill" style="width:13%;background:var(--teal)"></div></div>
+      <span class="prog-val">330 €</span>
+    </div>
+    <div class="prog-row">
+      <span class="prog-label">Sonstiges</span>
+      <div class="prog-bg"><div class="prog-fill" style="width:5%;background:var(--ink3)"></div></div>
+      <span class="prog-val">120 €</span>
+    </div>
+  </div>
+
+  <!-- Unterkunft -->
+  <div class="sub-title" style="margin-top:28px;">Unterkunft im Detail (Mittelklasse ~100 €/Nacht)</div>
+  <div class="acc-table">
+    <div class="acc-head"><span>Stop</span><span>Unterkunft</span><span>Nächte</span><span>Gesamt</span></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">SK Bratislava</div><div class="acc-detail">Arcadia Boutique Hotel · Altstadt</div></div><div class="acc-nights">1N</div><div class="acc-nights"><span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px;background:var(--g1-dim);color:var(--g1);">✓ Bezahlt</span></div><div class="acc-price">71 €</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">SK Hohe Tatra</div><div class="acc-detail">Hotel Crocus Strbske Pleso · Direkt am See</div></div><div class="acc-nights">4N</div><div class="acc-nights"><span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px;background:var(--g1-dim);color:var(--g1);">✓ Bezahlt</span></div><div class="acc-price">593 €</div></div>
+    <div class="acc-row"><div><div class="acc-city">PL Zakopane</div><div class="acc-detail">Aries Hotel &amp; SPA · Zentrum · Pool</div></div><div class="acc-nights">4N</div><div class="acc-price">513 €</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">PL Krakau</div><div class="acc-detail">PURO Krakow Kazimierz · Boutique</div></div><div class="acc-nights">2N</div><div class="acc-nights"><span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px;background:var(--g1-dim);color:var(--g1);">✓ Bezahlt</span></div><div class="acc-price">172 €</div></div>
+    <div class="acc-row" style="grid-template-columns:1fr auto auto auto;"><div><div class="acc-city">PL Breslau</div><div class="acc-detail">Europeum Boutique Hotel · Altstadt</div></div><div class="acc-nights">2N</div><div class="acc-nights"><span style="font-size:10px;font-weight:600;padding:2px 8px;border-radius:5px;background:var(--g1-dim);color:var(--g1);">✓ Bezahlt</span></div><div class="acc-price">156 €</div></div>
+    <div class="acc-total" style="grid-template-columns:1fr auto auto auto;"><span>Gesamt Unterkunft</span><span></span><span style="font-size:11px;color:var(--g1);">992 € bezahlt · 513 € offen</span><span>1.505 €</span></div>
+  </div>
+
+  <!-- Aktivitäten -->
+  <div class="sub-title">Aktivitäten &amp; Eintritte (zu zweit)</div>
+  <div class="act-table">
+    <div class="act-row"><div class="act-info"><div class="act-name">Seilbahn Kasprowy Wierch</div><div class="act-loc">Zakopane 🇵🇱</div><div class="act-note">pkl.pl · online vorbuchen! · Hin &amp; Zurück</div></div><div class="act-price">~40 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Seilbahn Tatranská Lomnica (Zelené Pleso)</div><div class="act-loc">Hohe Tatra 🇸🇰</div><div class="act-note">gopass.sk · online vorbuchen!</div></div><div class="act-price">~35 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Bären-Tour (Adventoura)</div><div class="act-loc">Hohe Tatra 🇸🇰</div><div class="act-note">~50 € p.P. · ~7 h geführt · unbedingt vorbuchen!</div></div><div class="act-price">~100 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Thermalbäder Bukowina</div><div class="act-loc">Zakopane 🇵🇱</div><div class="act-note">~25 € p.P. · Mineralwasser + Bergblick</div></div><div class="act-price">~50 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Wieliczka Salzbergwerk</div><div class="act-loc">Krakau 🇵🇱</div><div class="act-note">~25 € p.P. · UNESCO · online vorbuchen!</div></div><div class="act-price">~50 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Wawel-Burg Innenbesichtigung</div><div class="act-loc">Krakau 🇵🇱</div><div class="act-note">Burggelände kostenlos · Innen optional</div></div><div class="act-price">~30 €</div></div>
+    <div class="act-row"><div class="act-info"><div class="act-name">Nationalpark-Eintritt Tatra (div. Touren)</div><div class="act-loc">Slowakei + Polen</div><div class="act-note">Je ~2–4 € pro Eintritt</div></div><div class="act-price">~20 €</div></div>
+  </div>
+
+  <!-- Benzin & Essen -->
+  <div class="costs-grid">
+    <div class="cost-card">
+      <div class="cost-title">Auto &amp; Fahrtkosten</div>
+      <div class="cost-line"><span>Mietwagen (13 Tage, inkl. Versicherung)</span><span>850 €</span></div>
+      <div class="cost-line"><span>~2.800 km · 8 L/100 km · 1,55 €/L</span><span>~347 €</span></div>
+      <div class="cost-line"><span>SK-Vignette (10 Tage)</span><span>~12 €</span></div>
+      <div class="cost-line"><span>Parkgebühren gesamt</span><span>~40 €</span></div>
+      <div class="cost-line"><span>Gesamt Auto &amp; Fahrt</span><span>~1.249 €</span></div>
+    </div>
+    <div class="cost-card">
+      <div class="cost-title">🍽 Essen &amp; Trinken</div>
+      <div class="cost-line"><span>Mittags lokal (zu zweit, 13 Tage)</span><span>~195 €</span></div>
+      <div class="cost-line"><span>Abends Restaurant (zu zweit, 13 Tage)</span><span>~455 €</span></div>
+      <div class="cost-line"><span>Kaffee, Snacks, Eis</span><span>~104 €</span></div>
+      <div class="cost-line"><span>Gesamt Essen</span><span>~480 €</span></div>
+    </div>
+  </div>
+
+  <!-- Spartipps -->
+  <div class="sub-title">Spartipps</div>
+  <div class="budget-tips">
+    <div class="budget-tip" style="border-color:var(--g1)">Frühzeitig buchen spart 20–30% bei der Unterkunft — Juli ist Hochsaison in der Tatra und Zakopane. Jetzt schon schauen!</div>
+    <div class="budget-tip" style="border-color:var(--teal)">Polen ist sehr günstig: Abendessen zu zweit oft nur 20–25 €, Bier ~1,50 €. Slowakei etwas teurer in Touristenzentren.</div>
+    <div class="budget-tip" style="border-color:var(--amber)">Seilbahn Kasprowy Wierch (pkl.pl) und Wieliczka unbedingt online vorbuchen — sonst ausgebucht oder lange Schlangen.</div>
+    <div class="budget-tip" style="border-color:var(--violet)">Bargeld in Złoty (PLN) mitnehmen: ~150–200 € wechseln. Parkautomaten, Märkte und kleine Imbisse oft nur cash.</div>
+    <div class="budget-tip" style="border-color:var(--coral)">Die Bären-Tour (100 € zu zweit) ist der größte Einzelposten bei Aktivitäten — aber absolut einmalig. Unbedingt einplanen!</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="summary-table">
+    <div class="sum-row"><span class="sum-label">Unterkunft (13 Nächte)</span><span class="sum-val">1.505 €</span></div>
+    <div class="sum-row"><span class="sum-label">Essen &amp; Trinken (~37 €/Tag)</span><span class="sum-val">480 €</span></div>
+    <div class="sum-row"><span class="sum-label">Mietwagen (13 Tage, inkl. Versicherung)</span><span class="sum-val">850 €</span></div>
+    <div class="sum-row"><span class="sum-label">Benzin, Maut &amp; Parken</span><span class="sum-val">400 €</span></div>
+    <div class="sum-row"><span class="sum-label">Aktivitäten &amp; Eintritte</span><span class="sum-val">330 €</span></div>
+    <div class="sum-row"><span class="sum-label">Sonstiges &amp; Puffer</span><span class="sum-val">120 €</span></div>
+    <div class="sum-total"><span class="sum-total-label">Gesamt zu zweit</span><span class="sum-total-val">~ 3.675 €</span></div>
+    <div class="sum-pp"><span class="sum-pp-label">Pro Person</span><span class="sum-pp-val">~ 1.838 €</span></div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- NOTFALL INFOS -->
+<div class="sections" style="padding-bottom:0;">
+  <div class="sub-title">Notfall-Infos SK &amp; PL</div>
+  <div class="emergency-grid section-anim">
+    <div class="emerg-card">
+      <div class="emerg-lbl">Notruf EU</div>
+      <div class="emerg-num">112</div>
+      <div class="emerg-detail">Polizei, Feuerwehr, Rettung — funktioniert in SK und PL</div>
+    </div>
+    <div class="emerg-card">
+      <div class="emerg-lbl">Polizei Slowakei</div>
+      <div class="emerg-num">158</div>
+      <div class="emerg-detail">Nationale Polizei SK · Englisch oft möglich</div>
+    </div>
+    <div class="emerg-card">
+      <div class="emerg-lbl">Polizei Polen</div>
+      <div class="emerg-num">997</div>
+      <div class="emerg-detail">Nationale Polizei PL · In Touristenstädten Englisch</div>
+    </div>
+    <div class="emerg-card">
+      <div class="emerg-lbl">Krankenwagen Polen</div>
+      <div class="emerg-num">999</div>
+      <div class="emerg-detail">Rettungsdienst PL · Alternativ: 112</div>
+    </div>
+    <div class="emerg-card" style="grid-column:1/-1;">
+      <div class="emerg-lbl">Deutsche Botschaft Warschau</div>
+      <div class="emerg-num">+48 22 584 17 00</div>
+      <div class="emerg-detail">Notfallnummer 24/7: +49 30 1817 2000 · botschaft-warschau.diplo.de · Jazdów 12, 00-467 Warszawa</div>
+    </div>
+  </div>
+  <div class="cards-grid section-anim" style="margin-bottom:32px;">
+    <div class="card"><div class="card-title">Bei Autopanne</div><div class="card-desc">ADAC Auslandsschutz anrufen: <strong>+49 89 22 22 22</strong>. Pannendreieck aufstellen, Warnweste an. In SK/PL: Warnweste ist Pflicht im Auto!</div></div>
+    <div class="card"><div class="card-title">EHIC Krankenversicherung</div><div class="card-desc">Europäische Krankenversicherungskarte (EHIC) unbedingt einpacken! Deckt Notfallbehandlungen in SK und PL ab.</div></div>
+    <div class="card"><div class="card-title">Reiseapotheke</div><div class="card-desc">Blasenpflaster, Schmerzmittel, Magentropfen, Sonnencreme LSF 50+. Bei Wanderungen: Verbandsmaterial + Elastic-Bandage für Knöchel.</div></div>
+    <div class="card"><div class="card-title">Wichtige Docs offline</div><div class="card-desc">Reisepass-Kopie, Mietvertrag Auto, Buchungsbestätigungen alle als Screenshot speichern — kein Internet nötig!</div></div>
+  </div>
+</div>
+
+<footer style="padding:0;text-align:left;">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;padding:44px 48px 36px;">
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);">Route</div>
+      <div style="font-size:12px;color:var(--faint);line-height:2.0;">
+        Stuttgart DE<br>
+        → Bratislava SK<br>
+        → Hohe Tatra SK<br>
+        → Zakopane PL<br>
+        → Krakau PL<br>
+        → Breslau PL<br>
+        → Bergedorf DE
+      </div>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);">Zeitraum</div>
+      <div style="font-size:12px;color:var(--faint);line-height:2.0;">
+        19. Juli – 1. August 2026<br>
+        13 Nächte · 5 Stops<br>
+        ~2.800 km gesamt<br>
+        7 Wandertage<br>
+        3 Länder (DE · SK · PL)
+      </div>
+    </div>
+    <div>
+      <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border);">Budget</div>
+      <div style="font-size:12px;color:var(--faint);line-height:2.0;">
+        Unterkunft: 1.505 €<br>
+        Mietwagen: 850 €<br>
+        Benzin &amp; Maut: 400 €<br>
+        Aktivitäten: 330 €<br>
+        Essen: 480 €
+      </div>
+      <div style="margin-top:14px;font-family:&#39;Syne&#39;,sans-serif;font-size:20px;font-weight:800;color:var(--g1);letter-spacing:-0.02em;">~3.675 € zu zweit</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:2px;">~1.838 € pro Person</div>
+    </div>
+  </div>
+  <div style="border-top:1px solid var(--border);text-align:center;padding:18px 48px;font-size:11px;color:var(--faint);letter-spacing:0.06em;">
+    Mitteleuropa Roadtrip 2026
+  </div>
+  <div class="footer-quote">"Die Welt ist ein Buch. Wer nicht reist, liest nur eine Seite." — Augustinus</div>
+  <div class="footer-stops">
+    <span>Stuttgart</span>
+    <div class="footer-stop-line"></div><div class="footer-stop-dot"></div><div class="footer-stop-line"></div>
+    <span>Bratislava</span>
+    <div class="footer-stop-line"></div><div class="footer-stop-dot"></div><div class="footer-stop-line"></div>
+    <span>Hohe Tatra</span>
+    <div class="footer-stop-line"></div><div class="footer-stop-dot"></div><div class="footer-stop-line"></div>
+    <span>Zakopane</span>
+    <div class="footer-stop-line"></div><div class="footer-stop-dot"></div><div class="footer-stop-line"></div>
+    <span>Krakau</span>
+    <div class="footer-stop-line"></div><div class="footer-stop-dot"></div><div class="footer-stop-line"></div>
+    <span>Breslau</span>
+    <div class="footer-stop-line"></div><div class="footer-stop-dot"></div><div class="footer-stop-line"></div>
+    <span>Bergedorf</span>
+  </div>
+</footer>
+
+<script>
+function showPage(name){
+  // Switch active page
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+
+  // Update hero tab buttons
+  document.querySelectorAll('.hero-tab').forEach(b=>b.classList.remove('active'));
+  const idx={reiseplan:0,wandertage:1,stadttage:2,budget:3};
+  if(idx[name]!==undefined)
+    document.querySelectorAll('.hero-tab')[idx[name]].classList.add('active');
+
+  // Scroll directly to the content — past the hero
+  // Scroll to the page header of the active page
+  const activePage = document.getElementById('page-'+name);
+  if(activePage){
+    const top = activePage.getBoundingClientRect().top + window.pageYOffset - 20;
+    window.scrollTo({top: top, behavior:'smooth'});
+  }
+}
+
+function toggleCard(id){
+  document.getElementById(id).classList.toggle('open');
+}
+
+function toggleDay(id){
+  document.getElementById(id).classList.toggle('open');
+}
+// ── CHECKLIST ──
+function toggleCheck(id){
+  const item = document.getElementById(id);
+  if(!item) return;
+  item.classList.toggle('done');
+  const all = document.querySelectorAll('.check-item');
+  const done = document.querySelectorAll('.check-item.done').length;
+  const bar = document.getElementById('check-bar');
+  const count = document.getElementById('check-count');
+  if(bar) bar.style.width = (done/all.length*100) + '%';
+  if(count) count.textContent = done + ' / ' + all.length + ' erledigt';
+  const states = {};
+  all.forEach(el => states[el.id] = el.classList.contains('done'));
+  try{ sessionStorage.setItem('checklist', JSON.stringify(states)); }catch(e){}
+}
+(function restoreChecklist(){
+  try{
+    const saved = JSON.parse(sessionStorage.getItem('checklist')||'{}');
+    Object.entries(saved).forEach(([id,done])=>{
+      const el = document.getElementById(id);
+      if(el && done) el.classList.add('done');
+    });
+    const done = document.querySelectorAll('.check-item.done').length;
+    const total = document.querySelectorAll('.check-item').length;
+    const bar = document.getElementById('check-bar');
+    const count = document.getElementById('check-count');
+    if(bar) bar.style.width = (done/total*100)+'%';
+    if(count) count.textContent = done+' / '+total+' erledigt';
+  }catch(e){}
+})();
+
+
+// Nav active on scroll within visible page
+const allSections=['reiseplan','wandertage','stadttage','budget'];
+
+// ── 3. RIPPLE on buttons ──
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.stop-btn,.hero-tab,.nav-btn');
+  if(!btn)return;
+  const ripple=document.createElement('span');
+  ripple.className='ripple';
+  const rect=btn.getBoundingClientRect();
+  const size=Math.max(rect.width,rect.height);
+  ripple.style.cssText='width:'+size+'px;height:'+size+'px;left:'+(e.clientX-rect.left-size/2)+'px;top:'+(e.clientY-rect.top-size/2)+'px;';
+  btn.appendChild(ripple);
+  setTimeout(()=>ripple.remove(),500);
+});
+
+// ── 5. DARK/LIGHT TOGGLE ──
+function toggleTheme(){
+  const body=document.body;
+  const btn=document.getElementById('themeToggle');
+  body.classList.toggle('light-mode');
+  if(btn)btn.innerHTML=body.classList.contains('light-mode')?'&#9728;':'&#9790;';
+  try{localStorage.setItem('theme',body.classList.contains('light-mode')?'light':'dark');}catch(e){}
+}
+(function restoreTheme(){
+  try{
+    if(localStorage.getItem('theme')==='light'){
+      document.body.classList.add('light-mode');
+      const btn=document.getElementById('themeToggle');
+      if(btn)btn.innerHTML='&#9728;';
+    }
+  }catch(e){}
+})();
+
+// ── 1. SCROLL PROGRESS BAR ──
+window.addEventListener('scroll',()=>{
+  const bar=document.getElementById('scrollBar');
+  if(!bar)return;
+  const total=document.documentElement.scrollHeight-window.innerHeight;
+  if(total>0)bar.style.width=(window.scrollY/total*100)+'%';
+},{ passive:true });
+
+</script>
+
+
+</body></html>
